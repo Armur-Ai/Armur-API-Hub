@@ -1,0 +1,42 @@
+.whitpaper-sectionOne {
+    flex: none;
+    height: auto;
+    position: relative;
+    transform: perspective(1200px);
+    width: 100%;
+    z-index: 0;
+    opacity: 1;
+    transform: perspective(1200px);
+}
+
+.whitepaper-sectiontwo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0px;
+    height: 1439px;
+    justify-content: center;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+}
+
+.whitepaper-sectionthree {
+    flex: none;
+    height: 1439px;
+    overflow: visible;
+    position: relative;
+    width: 1440px;
+}
+
+.whitepaper-middleImg {
+    height: 675px;
+    left: calc(50.034746351633096% - 676px / 2);
+    overflow: hidden;
+    position: absolute;
+    top: calc(50.243224461431566% - 675px / 2);
+    width: 676px;
+    transform: perspective(1200px);
+
+}

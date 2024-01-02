@@ -1,0 +1,54 @@
+.marketplace-title {
+    @apply text-[2.5rem] leading-[3.135rem];
+    color: transparent;
+    width: auto;
+    background: linear-gradient(
+        90.19deg,
+        #636363 0.17%,
+        #e1e1e1 4.7%,
+        #e6e6e6 9.33%,
+        #ffffff 16.02%,
+        #dfdfdf 26.31%,
+        #8e8e8e 46.39%,
+        #b1b1b1 54.27%,
+        #747474 56.29%,
+        #646464 63.42%,
+        #5f5f5f 66.91%,
+        #656565 70.33%,
+        #767676 75.27%,
+        #939393 85.36%,
+        #bababa 88.12%,
+        #d3d3d3 91.09%,
+        #dbdbdb 93.06%,
+        #f3f3f3 98.99%
+    );
+    background-clip: text;
+}
+
+.search-input {
+    input {
+        background-color: transparent;
+        color: white;
+        &::placeholder {
+            color: #cccccc;
+        }
+    }
+    .ant-input-affix-wrapper {
+        background: transparent;
+        color: #cccccc;
+        border-radius: 46px;
+        border: 0px solid;
+    }
+}
+
+.discover-card {
+    @apply w-full min-h-[12.5rem] rounded-[1.25rem];
+}
+.discover-card-content {
+    background: linear-gradient(105.87deg, rgba(255, 255, 255, 0.24) 3.04%, rgba(255, 255, 255, 0) 96.05%);
+    @apply rounded-bl-[1.25rem] rounded-br-[1.25rem] py-3 px-7;
+}
+
+.recommended-card {
+    @apply w-[13.8rem] min-h-[17.75rem] relative px-4 pt-5 pb-7;
+}

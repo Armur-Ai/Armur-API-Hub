@@ -1,0 +1,25 @@
+.ant-collapse {
+    background-color: transparent !important;
+    border: 0px !important;
+}
+.ant-collapse-expand-icon {
+    color: white;
+}
+.ant-collapse-content {
+    background-color: transparent !important;
+    border: 0 !important;
+}
+.ant-collapse-content-box {
+    padding-left: 2.5rem !important;
+}
+.ant-collapse-item {
+    border-bottom: 1px solid #79797b80 !important;
+}
+
+.explore-api {
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 1rem;
+    border-image-source: url("https://res.cloudinary.com/sls/image/upload/v1704006731/armur/marketplace-explore-api_d6efji.svg");
+    border-image-slice: 60 30;
+}

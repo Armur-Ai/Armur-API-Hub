@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --main-background: 5, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --main-background: 5, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--main-background));
+  font-family: "Michroma", sans-serif;
+  overflow-x: hidden;
+  aspect-ratio: 1;
+}
+
+.main {
+  min-height: 1500px;
+}
+
+.btn-primary {
+  transform: none;
+  transform-origin: 50% 50% 0px;
+
+  @apply px-5 py-3 flex justify-center items-center gap-2 text-sm font-semibold tracking-wider text-white border-0 h-auto;
+
+  &:hover {
+    @apply text-white #{!important};
+  }
+}
+
+.page-title {
+  background: linear-gradient(
+    90deg,
+    rgb(97, 97, 97) 0%,
+    rgb(255, 255, 255) 43.9272%,
+    rgb(255, 255, 255) 49.5495%,
+    rgb(255, 255, 255) 53.3078%,
+    rgb(97, 97, 97) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  @apply xl:text-[4.563rem] lg:text-[2.5rem] text-3xl tracking-[0.03em] w-auto;
+  line-height: 130% !important;
+}
+
+.transfrom-1200 {
+  transform: perspective(1200px);
+}
+
+//modal
+.ant-modal-content {
+  background-color: transparent !important;
+  // background-image: url("https://res.cloudinary.com/sls/image/upload/v1703765303/armur/trqof2nsoxoqhrb37qun.png") !important;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: top;
+  @apply p-[4.3rem] rounded-xl #{!important};
+}
+.ant-modal-footer {
+  display: none;
+}
+.ant-modal-header {
+  background: transparent !important;
+}
+.ant-modal-title {
+  color: white !important;
+  font-size: 1.75rem !important;
+  line-height: 130% !important;
+}

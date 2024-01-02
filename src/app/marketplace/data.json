@@ -1,0 +1,156 @@
+{
+    "DISCOVERTOOLS": [
+        {
+            "imageUrl": "/marketplace/web-icon.svg",
+            "name": "Web3 Auditing tools"
+        },
+        {
+            "imageUrl": "/marketplace/code-scan.svg",
+            "name": "Code scan"
+        },
+        {
+            "imageUrl": "/marketplace/sec-ops.svg",
+            "name": "SecOps"
+        },
+        {
+            "imageUrl": "/marketplace/api-security.svg",
+            "name": "API Security"
+        },
+        {
+            "imageUrl": "/marketplace/pentesting.svg",
+            "name": "Pentesting"
+        },
+        {
+            "imageUrl": "/marketplace/recan.svg",
+            "name": "Recon"
+        },
+        {
+            "imageUrl": "/marketplace/web3-sec.svg",
+            "name": "Web3 sec"
+        },
+        {
+            "imageUrl": "/marketplace/db-security.svg",
+            "name": "DB Security"
+        },
+        {
+            "imageUrl": "/marketplace/plugin.svg",
+            "name": "Plugin"
+        }
+    ],
+    "RECOMMENDED_TOOLS": [
+        {
+            "toolName": "Solidity (Smart Contract)",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "imageUrl": "/marketplace/star.svg",
+            "isSaved": false,
+            "isVerified": true
+        },
+        {
+            "toolName": "Javascript Security Audit",
+            "description": "Check for vulnerabilities, security issues and bugs in your Javascript code",
+            "imageUrl": "/marketplace/circle.svg",
+            "isSaved": false,
+            "isVerified": true
+        },
+        {
+            "toolName": "RUST Vulnerability Scan",
+            "description": "Check for vulnerabilities, security issues and bugs in your Rust code",
+            "imageUrl": "/marketplace/triangle.svg",
+            "isSaved": false,
+            "isVerified": true
+        },
+        {
+            "toolName": "Python Code Audit",
+            "description": "Check for vulnerabilities, security issues and bugs in your Python code",
+            "imageUrl": "/marketplace/star.svg",
+            "isSaved": false,
+            "isVerified": true
+        },
+        {
+            "toolName": "GO Security Scan",
+            "description": "Check for security issues, vulnerabilities and bugs in your Golang code",
+            "imageUrl": "/marketplace/square.svg",
+            "isSaved": false,
+            "isVerified": true
+        },
+        {
+            "toolName": "RUST Vulnerability Scan",
+            "description": "Check for vulnerabilities, security issues and bugs in your Rust code",
+            "imageUrl": "/marketplace/sphere.svg",
+            "isSaved": false,
+            "isVerified": true
+        },
+        {
+            "toolName": "Javascript Security Audit",
+            "description": "Check for vulnerabilities, security issues and bugs in your Javascript code",
+            "imageUrl": "/marketplace/circle.svg",
+            "isSaved": false,
+            "isVerified": true
+        },
+        {
+            "toolName": "Javascript Security Audit",
+            "description": "Check for vulnerabilities, security issues and bugs in your Javascript code",
+            "imageUrl": "/marketplace/circle.svg",
+            "isSaved": false,
+            "isVerified": true
+        }
+    ],
+    "POPULAR_TOOLS": [
+        {
+            "toolName": "Move (Smart Contract Audit)",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "imageUrl": "/marketplace/star.svg",
+            "isSaved": false,
+            "isVerified": true
+        },
+        {
+            "toolName": "Ink! (Smart Contract Audit)",
+            "description": "Check for vulnerabilities, security issues and bugs in your Javascript code",
+            "imageUrl": "/marketplace/circle.svg",
+            "isSaved": false,
+            "isVerified": true
+        },
+        {
+            "toolName": "Container attack simulation",
+            "description": "Check for vulnerabilities, security issues and bugs in your Rust code",
+            "imageUrl": "/marketplace/triangle.svg",
+            "isSaved": false,
+            "isVerified": true
+        },
+        {
+            "toolName": "Cloud trail Log Audit",
+            "description": "Check for vulnerabilities, security issues and bugs in your Python code",
+            "imageUrl": "/marketplace/star.svg",
+            "isSaved": false,
+            "isVerified": true
+        },
+        {
+            "toolName": "MongoDB Security scan ",
+            "description": "Check for security issues, vulnerabilities and bugs in your Golang code",
+            "imageUrl": "/marketplace/square.svg",
+            "isSaved": false,
+            "isVerified": true
+        },
+        {
+            "toolName": "Postgres Security scan",
+            "description": "Check for vulnerabilities, security issues and bugs in your Rust code",
+            "imageUrl": "/marketplace/sphere.svg",
+            "isSaved": false,
+            "isVerified": true
+        },
+        {
+            "toolName": "Ethereum Recon tool",
+            "description": "Check for vulnerabilities, security issues and bugs in your Javascript code",
+            "imageUrl": "/marketplace/circle.svg",
+            "isSaved": false,
+            "isVerified": true
+        },
+        {
+            "toolName": "Javascript Security Audit",
+            "description": "Check for vulnerabilities, security issues and bugs in your Javascript code",
+            "imageUrl": "/marketplace/circle.svg",
+            "isSaved": false,
+            "isVerified": true
+        }
+    ]
+}
