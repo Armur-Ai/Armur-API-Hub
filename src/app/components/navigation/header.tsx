@@ -6,16 +6,13 @@ import "./headerFooter.scss";
 import Link from "next/link";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { usePathname } from "next/navigation";
-import { Michroma } from "next/font/google";
 import { Button } from "antd";
-
-const michroma = Michroma({ subsets: ["latin"], weight: ["400"] });
 
 const Header = () => {
   const router = usePathname();
 
   return (
-    <header className="flex items-center justify-between py-6 px-24 header border-b-[1px] border-black">
+    <header className="flex items-center justify-between py-6 px-24 header border-b-[1px] border-black sticky top-0 overflow-hidden">
       <Link href={"/"}>
         <Image
           src="/logo/main_logo.png"
@@ -26,7 +23,7 @@ const Header = () => {
         />
       </Link>
       <div className="flex items-center">
-        <ul className={`flex items-center gap-10 ${michroma.className}`}>
+        <ul className={`flex items-center gap-10 font-michroma`}>
           <Link href={"/marketplace"}>
             <li>Marketplace</li>
             <div
@@ -35,38 +32,49 @@ const Header = () => {
               }`}
             />
           </Link>
-          <Link href={"/team"}>
+          {/* <Link href={"/team"}> */}
+          <div>
             <li>Team</li>
             <div
               className={`activeLink ${
                 router === "/team" ? " opacity-100" : "opacity-0"
               }`}
             />
-          </Link>
-          <Link href={"/whitepaper"}>
+          </div>
+
+          {/* </Link> */}
+          {/* <Link href={"/whitepaper"}> */}
+          <div>
             <li>Whitepaper</li>
             <div
               className={`activeLink ${
                 router === "/whitepaper" ? " opacity-100" : "opacity-0"
               }`}
             />
-          </Link>
-          <Link href={"/blog"}>
+          </div>
+
+          {/* </Link> */}
+          {/* <Link href={"/blog"}> */}
+          <div>
             <li>Blog</li>
             <div
               className={`activeLink ${
                 router === "/blog" ? " opacity-100" : "opacity-0"
               }`}
             />
-          </Link>
-          <Link href={"/contact"}>
+          </div>
+
+          {/* </Link> */}
+          <div>
+            {/* <Link href={"/contact"}> */}
             <li>Contact</li>
             <div
               className={`activeLink ${
                 router === "/contact" ? " opacity-100" : "opacity-0"
               }`}
             />
-          </Link>{" "}
+          </div>
+          {/* </Link>{" "} */}
         </ul>
         <Button className="btn-primary ml-11 relative">
           <div className="w-full h-full absolute left-0 top-0">

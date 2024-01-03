@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Michroma&family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@300;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -77,4 +77,38 @@ body {
   color: white !important;
   font-size: 1.75rem !important;
   line-height: 130% !important;
+}
+.custom-border {
+  border-style: solid;
+  border-width: 0.25rem;
+  border-image-slice: 20 10;
+}
+
+//--------------------------------------------------------------//
+//                       TAB css                                //
+//--------------------------------------------------------------//
+.ant-tabs {
+  @apply text-white h-full;
+}
+.ant-tabs-nav {
+  @apply mb-5 #{!important};
+}
+.ant-tabs-nav::before {
+  @apply border-[#79797B80] #{!important};
+}
+
+.ant-tabs-tab {
+  @apply border-transparent text-[#79797B] font-orbitron text-xs leading-6 px-2 py-3 #{!important};
+}
+
+.ant-tabs-tab-active {
+  @apply bg-transparent border-l-0 border-r-0 border-t-0 border-white text-white #{!important};
+
+  .ant-tabs-tab-btn {
+    @apply text-white #{!important};
+  }
+}
+.ant-tabs-content,
+.ant-tabs-tabpane {
+  height: 100%;
 }

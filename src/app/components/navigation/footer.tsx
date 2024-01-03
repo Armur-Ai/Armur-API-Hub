@@ -2,9 +2,7 @@ import React from "react";
 import Image from "next/image";
 import "./headerFooter.scss";
 import Link from "next/link";
-import { Michroma, Sora } from "next/font/google";
-
-const michroma = Michroma({ subsets: ["latin"], weight: ["400"] });
+import { Sora } from "next/font/google";
 
 const sora = Sora({ subsets: ["latin"], weight: ["400"] });
 
@@ -97,7 +95,7 @@ const Footer = () => {
                 {menuLink?.map((data: any, key: number) => (
                   <div
                     key={key}
-                    className={` text-base font-normal ${michroma.className}`}
+                    className={` text-base font-normal font-michroma`}
                   >
                     <Link href={data.link}>{data.name}</Link>
                   </div>

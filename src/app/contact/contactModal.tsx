@@ -3,7 +3,6 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import TextAreaFiled from "../components/common/textAreaField";
 import InputField from "../components/common/inputField";
-import { Michroma, Orbitron } from "next/font/google";
 
 interface contactModalProps {
   open: boolean;
@@ -22,9 +21,6 @@ interface contactModalProps {
     index: number;
   };
 }
-
-const michroma = Michroma({ subsets: ["latin"], weight: ["400"] });
-const orbitron = Orbitron({ subsets: ["latin"], weight: ["400"] });
 
 const ContactModal = (props: contactModalProps) => {
   const {
@@ -53,9 +49,7 @@ const ContactModal = (props: contactModalProps) => {
     <Modal
       open={open}
       title={
-        <span className={`${orbitron?.className} !font-bold`}>
-          {clickedKey?.title}
-        </span>
+        <span className={`font-orbitron !font-bold`}>{clickedKey?.title}</span>
       }
       onOk={handleOk}
       onCancel={handleCancel}
@@ -68,7 +62,7 @@ const ContactModal = (props: contactModalProps) => {
         <Image src={"/bgs/modal-bg.png"} alt="modal-bg" fill />
       </div>
       <div className="text-white pt-2.5 flex flex-col gap-14">
-        <p className={` text-sm ${michroma.className}`}>{clickedKey?.para}</p>
+        <p className={` text-sm font-michroma`}>{clickedKey?.para}</p>
         <form noValidate id="contactForm" onSubmit={handleSubmit(onSubmit)}>
           <div className="flex flex-col gap-7">
             <InputField
@@ -112,7 +106,7 @@ const ContactModal = (props: contactModalProps) => {
             />
             <Button
               form="contactForm"
-              className={`btn-primary w-min relative hover:!bg-transparent !font-semibold ${michroma.className}`}
+              className={`btn-primary w-min relative hover:!bg-transparent !font-semibold font-michroma`}
               type="primary"
               htmlType="submit"
             >

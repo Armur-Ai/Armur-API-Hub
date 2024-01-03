@@ -1,10 +1,10 @@
 import React from "react";
-import { Michroma } from "next/font/google";
+// import { Michroma } from "next/font/google";
 import Image from "next/image";
 import "./team.scss";
 import TeamCard from "./teamCard";
 
-const michroma = Michroma({ subsets: ["latin"], weight: ["400"] });
+// const michroma = Michroma({ subsets: ["latin"], weight: ["400"] });
 
 const Team = () => {
   const team = [
@@ -44,7 +44,7 @@ const Team = () => {
         <div className="flex flex-col gap-3 justify-center items-center">
           <h1 className="page-title">Founding Partners</h1>
           <p
-            className={`xl:text-2xl text-sm xl:leading-9 ${michroma.className} text-center w-8/12 mx-auto`}
+            className={`xl:text-2xl text-sm xl:leading-9 font-michroma text-center w-8/12 mx-auto`}
           >
             With a combined technical experience of more than 50 years and more
             than 30 years combined experience of running tech companies, our
@@ -75,20 +75,18 @@ const Team = () => {
                   team?.length - 1 === key ? " gap-8" : "gap-16"
                 }`}
               >
-                <h3
-                  className={`${michroma.className} text-base uppercase w-auto`}
-                >
+                <h3 className={`font-michroma text-base uppercase w-auto`}>
                   <span className="text-color">{data?.designation}</span>
                 </h3>
                 <h3
-                  className={`${michroma.className} text-[1.6rem] leading-[130%] w-auto`}
+                  className={`font-michroma text-[1.6rem] leading-[130%] w-auto`}
                 >
                   <span className="text-color">{data?.title}</span>
                 </h3>
               </div>
             </div>
             <p
-              className={`${michroma.className} text-lg text-[rgba(255,255,255,0.8)] leading-[150%]`}
+              className={`font-michroma text-lg text-[rgba(255,255,255,0.8)] leading-[150%]`}
             >
               {data?.desc}
             </p>

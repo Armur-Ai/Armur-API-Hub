@@ -1,9 +1,10 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Marketplace from "./marketplace/page";
 
 export default function Home() {
   return (
     <div>
-      <h3>dd</h3>
+      <Marketplace />
     </div>
-  )
+  );
 }

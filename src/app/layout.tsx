@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={`${orbitron.className} relative`}>
         <div className=" min-h-screen overflow-hidden container mx-auto">
           <Header />
-          <div className="main relative z-[9999]">{children}</div>
+          <div className="main relative z-[1000]">{children}</div>
           <div className="footer-container h-auto">
             <Footer />
           </div>

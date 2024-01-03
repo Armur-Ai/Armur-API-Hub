@@ -2,11 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 import { Controller } from "react-hook-form";
-import { Michroma } from "next/font/google";
 import TextArea from "antd/es/input/TextArea";
 import Image from "next/image";
-
-const michroma = Michroma({ subsets: ["latin"], weight: ["400"] });
 
 interface TextareaProps {
   register: any;
@@ -81,7 +78,7 @@ const TextAreaFiled = (props: TextareaProps) => {
                         placeholder:text-[rgba(255,255,255,0.5)]  !border-0
                           shadow-[inset_0_0_0_1px_transparent]
                           placeholder:text-gray !min-h-40
-                        text-white ${extraClass} ${michroma.className}
+                        text-white ${extraClass} font-michroma
                           hover:border-0 focus:border-0`}
               prefix={prefix}
               defaultValue={defaultValue}

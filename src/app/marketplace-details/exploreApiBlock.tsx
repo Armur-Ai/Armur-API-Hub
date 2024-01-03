@@ -6,7 +6,6 @@ import { InfoCircleOutlined } from "@ant-design/icons";
 import "./marketplace-details.scss";
 
 const ExploreApiBlock = (props: any) => {
-  const { michroma } = props;
   const { Panel } = Collapse;
   const apiList = [
     {
@@ -81,7 +80,7 @@ const ExploreApiBlock = (props: any) => {
 
   const getHeader = (headerText: string) => (
     <div
-      className={`flex justify-between items-center w-full text-white ${michroma.className}`}
+      className={`flex justify-between items-center w-full text-white font-michroma`}
     >
       <h3 className="text-sm tracking-wide break-words">{headerText}</h3>{" "}
       <InfoCircleOutlined />

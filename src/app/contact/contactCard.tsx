@@ -2,32 +2,19 @@ import Image from "next/image";
 import React from "react";
 import "./contactCard.scss";
 import { Button } from "antd";
-import { Orbitron } from "next/font/google";
 
 interface ContactCardProps {
   title: string;
   index: number;
   para: string;
-  michroma: any;
   btnText: string;
   image: any;
   setClickedKey: any;
   setOpen: any;
 }
 
-const orbitron = Orbitron({ subsets: ["latin"], weight: ["400"] });
-
 const ContactCard = (props: ContactCardProps) => {
-  const {
-    title,
-    para,
-    michroma,
-    btnText,
-    image,
-    setClickedKey,
-    index,
-    setOpen,
-  } = props;
+  const { title, para, btnText, image, setClickedKey, index, setOpen } = props;
 
   return (
     <div className=" relative contact-card flex flex-col justify-between w-[24rem] z-50">
@@ -50,10 +37,10 @@ const ContactCard = (props: ContactCardProps) => {
       </div>
       <div className="flex flex-col gap-3">
         <h2 className="text-[2rem] font-bold capitalize">{title}</h2>
-        <p className={`text-base ${michroma?.className}`}>{para}</p>
+        <p className={`text-base font-michroma`}>{para}</p>
       </div>
       <Button
-        className={`btn-primary relative w-min ${orbitron.className}`}
+        className={`btn-primary relative w-min font-orbitron`}
         onClick={() => {
           if (setClickedKey) {
             setClickedKey({ title, para, btnText, index });

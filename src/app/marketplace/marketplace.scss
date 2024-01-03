@@ -26,18 +26,26 @@
 }
 
 .search-input {
+    height: 45px;
+    width: 450px;
+
+    &::after {
+        @apply w-full h-full -z-10 -left-0.5 -right-0.5 -top-0.5 -bottom-0.5 absolute bg-no-repeat;
+        background-size: 100%;
+        content: "";
+        background: url("https://res.cloudinary.com/sls/image/upload/v1704196389/armur/Frame_1437255972_qynn7c.png");
+    }
+
     input {
-        background-color: transparent;
-        color: white;
-        &::placeholder {
-            color: #cccccc;
-        }
+        @apply bg-transparent text-white font-michroma placeholder:text-[rgba(204,204,204,0.3)];
     }
     .ant-input-affix-wrapper {
         background: transparent;
         color: #cccccc;
         border-radius: 46px;
         border: 0px solid;
+        height: 45px;
+        @apply px-7;
     }
 }
 
@@ -51,4 +59,84 @@
 
 .recommended-card {
     @apply w-[13.8rem] min-h-[17.75rem] relative px-4 pt-5 pb-7;
+}
+
+.reset-bg {
+    @apply relative;
+}
+
+// . {
+.marketplace {
+    color: white;
+    position: relative;
+    z-index: 99;
+    min-width: 14.3rem;
+}
+.marketplace-selector {
+    // background-color: #ffffff1f !important ;
+    background: linear-gradient(0deg, #222222, #222222), linear-gradient(0deg, #b5b5b5, #b5b5b5) !important;
+    border: 1px solid #b5b5b5 !important;
+    color: white !important;
+    @apply rounded-[0.31rem] #{!important};
+}
+.marketplace-arrow {
+    color: white !important;
+}
+// bg-[#ffffff1f]
+.marketplace-dropdown {
+    background: linear-gradient(0deg, #222222, #222222), linear-gradient(0deg, #b5b5b5, #b5b5b5) !important;
+    @apply rounded p-0 z-[9998] border-[1px] border-[#B5B5B5] -mt-0.5 #{!important};
+
+    .marketplace-item {
+        @apply text-sm font-orbitron px-2 py-1 font-medium text-white border-b-[1px] rounded-none border-[#B5B5B5] #{!important};
+    }
+}
+.marketplace-item-option-selected {
+    @apply bg-[#FFFFFF14]  font-normal #{!important};
+}
+.marketplace-selection-item {
+    @apply text-sm font-orbitron text-white #{!important};
+}
+.marketplace-selection-placeholder {
+    @apply text-white font-orbitron font-medium #{!important};
+}
+// }
+.selected-option {
+    background: #4e4d4d;
+    border-radius: 5px;
+
+    &::after {
+        border-radius: 5px;
+        z-index: -1;
+        position: absolute;
+        left: -2px;
+        bottom: -1px;
+        right: -1px;
+        top: -1px;
+        padding: 1rem 2rem;
+        // padding: 18px 25x;
+        content: "";
+        width: 102%;
+        height: 35px;
+        background: linear-gradient(
+            90.19deg,
+            #636363 0.17%,
+            #e1e1e1 4.7%,
+            #e6e6e6 9.33%,
+            #ffffff 16.02%,
+            #dfdfdf 26.31%,
+            #8e8e8e 46.39%,
+            #b1b1b1 54.27%,
+            #747474 56.29%,
+            #646464 63.42%,
+            #5f5f5f 66.91%,
+            #656565 70.33%,
+            #767676 75.27%,
+            #939393 85.36%,
+            #bababa 88.12%,
+            #d3d3d3 91.09%,
+            #dbdbdb 93.06%,
+            #f3f3f3 98.99%
+        );
+    }
 }

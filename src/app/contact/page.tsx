@@ -7,8 +7,6 @@ import ContactCard from "./contactCard";
 import { useForm } from "react-hook-form";
 import ContactModal from "./contactModal";
 
-const michroma = Michroma({ subsets: ["latin"], weight: ["400"] });
-
 const Contact = () => {
   const cardArray: any = [
     {
@@ -58,7 +56,7 @@ const Contact = () => {
       <div className="relative h-[79.9rem]">
         <div className="absolute flex flex-col gap-3 w-[43rem] left-[7%] top-[339px]">
           <h1 className="page-title"> GET IN TOUCH!</h1>
-          <p className={`text-2xl leading-9 ${michroma.className}`}>
+          <p className={`text-2xl leading-9 font-michroma`}>
             Want to build on Web3 in a secure way? Leave us a message, and we
             will get in touch.
           </p>
@@ -71,7 +69,7 @@ const Contact = () => {
               fill
             />
           </div>
-          <ContactForm {...{ michroma }} />
+          <ContactForm />
         </div>
       </div>
       <div className="flex flex-col gap-52">
@@ -80,7 +78,7 @@ const Contact = () => {
             PREFER TO REACH <br /> OUT DIRECTLY?
           </h2>
           <p
-            className={`mt-5 text-2xl leading-9 text-center w-8/12 mx-auto ${michroma.className}`}
+            className={`mt-5 text-2xl leading-9 text-center w-8/12 mx-auto font-michroma`}
           >
             If you&apos;re like us, you probably don&apos;t like filling up
             forms. Contact us directly with any of the links below.
@@ -94,7 +92,6 @@ const Contact = () => {
                 title: data?.title,
                 image: data?.image,
                 para: data?.para,
-                michroma,
                 btnText: data?.btnText,
                 setClickedKey,
                 setOpen,

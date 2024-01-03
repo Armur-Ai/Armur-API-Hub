@@ -14,12 +14,42 @@
 }
 .ant-collapse-item {
     border-bottom: 1px solid #79797b80 !important;
+    border-radius: 0 !important;
 }
 
 .explore-api {
     border-radius: 0.5rem;
-    border-style: solid;
-    border-width: 1rem;
     border-image-source: url("https://res.cloudinary.com/sls/image/upload/v1704006731/armur/marketplace-explore-api_d6efji.svg");
-    border-image-slice: 60 30;
+}
+.testApi-block {
+    border-radius: 0.5rem;
+    border-image-source: url("https://res.cloudinary.com/sls/image/upload/v1704008452/armur/marketplace-test-api_omnnhc.svg");
+}
+.codeTab-block {
+    @apply rounded;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-image-slice: 20 20;
+    border-image-source: url("https://res.cloudinary.com/sls/image/upload/v1704114486/armur/marketplace-details-tab-bgs_ng2jkm.svg");
+}
+.test-btn {
+    background: linear-gradient(106.66deg, rgba(255, 255, 255, 0.2) 38.49%, rgba(255, 255, 255, 0) 182.75%);
+    padding: 0.25rem 0.6rem !important;
+
+    @apply hover:text-white #{!important};
+}
+.testapicollapse {
+    .ant-collapse-header {
+        padding-bottom: 0 !important;
+    }
+    .ant-collapse-content-box {
+        padding: 8px 16px !important;
+    }
+}
+
+.extension-card {
+    background-image: url("https://res.cloudinary.com/sls/image/upload/v1704181015/armur/extension-bg_ennuef.svg");
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    background-position: center;
 }

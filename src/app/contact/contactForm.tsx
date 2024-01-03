@@ -8,7 +8,6 @@ import { Button } from "antd";
 import Image from "next/image";
 
 const ContactForm = (props: any) => {
-  const { michroma } = props;
   const { register, formState, control, handleSubmit, watch, setFocus } =
     useForm({
       defaultValues: {
@@ -30,7 +29,7 @@ const ContactForm = (props: any) => {
 
   return (
     <div className="flex flex-col gap-14">
-      <h2 className={`text-[2rem] tracking-[-0.02em] ${michroma?.className}`}>
+      <h2 className={`text-[2rem] tracking-[-0.02em] font-michroma`}>
         Let&apos;s chat
       </h2>
       <form

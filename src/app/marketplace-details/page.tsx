@@ -1,14 +1,16 @@
 import React from "react";
 import Image from "next/image";
-import { Michroma } from "next/font/google";
 import { CheckOutlined } from "@ant-design/icons";
 import ExploreApiBlock from "./exploreApiBlock";
 import "./marketplace-details.scss";
+import TestApiBlock from "./testApiBlock";
+import CodeTabBlock from "./codeTabBlock";
+import ExtensionCard from "./extensionCard";
+import AdvanceApiCodeEditor from "../components/codeEditor/advanceApiCodeEditor";
 
-const michroma = Michroma({ subsets: ["latin"], weight: ["400"] });
 const Maketplacedetails = () => {
   return (
-    <div className="p-28 pt-10">
+    <div className=" px-16 pt-10">
       {/* header */}
       <div className="flex justify-between items-start pb-6 border-b-[1px] border-[#79797B]">
         <div className="flex gap-6 ">
@@ -31,12 +33,12 @@ const Maketplacedetails = () => {
               GO Security Scan
             </h2>
             <p
-              className={`${michroma.className} text-base text-[rgba(255,255,255,0.6)]`}
+              className={`font-michroma text-base text-[rgba(255,255,255,0.6)]`}
             >
               Security Checker
             </p>
             <p
-              className={`${michroma.className} text-base text-[rgba(255,255,255,0.6)]`}
+              className={`font-michroma text-base text-[rgba(255,255,255,0.6)]`}
             >
               Updated 10 months ago
             </p>
@@ -59,11 +61,58 @@ const Maketplacedetails = () => {
       </div>
       {/* Detailed Block */}
       <div className="flex pt-3 items-stretch">
-        <div className="w-4/12 explore-api">
-          <ExploreApiBlock {...{ michroma }} />
+        <div className="w-3/12 explore-api custom-border">
+          <ExploreApiBlock />
         </div>
-        <div className="w-6/12 "></div>
+        <div className="w-6/12 testApi-block custom-border">
+          <TestApiBlock />
+        </div>
+        <div className="w-3/12 h-full pl-5">
+          <CodeTabBlock />
+        </div>
       </div>
+      {/* Extension Block */}
+      <div className="mt-8 flex gap-10">
+        <ExtensionCard
+          {...{
+            iconUrl: "/icons/vs-code.svg",
+            heading: "VScode Extension",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum ut odio sit amet ",
+            url: "/",
+            width: 59,
+            height: 55,
+          }}
+        />
+        <ExtensionCard
+          {...{
+            iconUrl: "/icons/npm.svg",
+            heading: "NPM Dependency",
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum ut odio sit amet ",
+            url: "/",
+            width: 67,
+            height: 26,
+          }}
+        />
+      </div>
+      {/* Advanced API Usage */}
+      <div className="flex gap-3 mt-5">
+        <Image
+          src="/marketplace-details/setting.svg"
+          alt="settings"
+          width={80}
+          height={74}
+        />
+        <div className="flex flex-col gap-2">
+          <h3 className="text-2xl font-bold">Advanced API Usage</h3>
+          <p className="text-[#FFFFFFB2] font-michroma text-base tracking-wider">
+            You can also build your own tooling by using this API. Below are the
+            docs for the API -
+          </p>
+        </div>
+      </div>
+      <AdvanceApiCodeEditor />
     </div>
   );
 };

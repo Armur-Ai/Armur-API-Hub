@@ -3,11 +3,8 @@
 import Input from "antd/es/input/Input";
 import React, { useEffect, useState } from "react";
 import { Controller } from "react-hook-form";
-import { Michroma } from "next/font/google";
 import "./common.scss";
 import Image from "next/image";
-
-const michroma = Michroma({ subsets: ["latin"], weight: ["400"] });
 
 interface InputProps {
   register: any;
@@ -82,7 +79,7 @@ const InputField = (props: InputProps) => {
                           bg-transparent
                          placeholder:text-[rgba(255,255,255,0.5)] 
                         border-0
-                        text-white ${extraClass} ${michroma.className}
+                        text-white ${extraClass} font-michroma
                         hover:border-0 focus:border-0 custom-inputField`}
               prefix={prefix}
               placeholder={placeholder}
