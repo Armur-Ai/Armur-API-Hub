@@ -1,14 +1,11 @@
 "use client";
-import {
-  CheckOutlined,
-  CloseOutlined,
-  SearchOutlined,
-} from "@ant-design/icons";
-import { Input, Select } from "antd";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import Slider from "react-slick";
+import { Input } from "antd";
 import { DISCOVERTOOLS, POPULAR_TOOLS, RECOMMENDED_TOOLS } from "./data.json";
+import { CheckOutlined, SearchOutlined } from "@ant-design/icons";
 import "./marketplace.scss";
 
 const MarketplaceComponent = () => {
@@ -45,6 +42,41 @@ const MarketplaceComponent = () => {
     }
   };
 
+  const settings: any = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1450,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 780,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   //--------------------------------------------------------------------
   //                       TITLE_WITH_PARA
   //--------------------------------------------------------------------
@@ -72,10 +104,12 @@ const MarketplaceComponent = () => {
   };
   return (
     <div className="xl:px-28 lg:px-16 px-10 py-5">
-      <div className="md:flex block items-center justify-between">
-        <div className="flex items-center">
+      <div className="lg:flex hidden items-center justify-between">
+        <div className=" items-center  flex">
           <h2 className="marketplace-title">AI Security</h2>
-          <h2 className="marketplace-title">&nbsp;Tools Hub</h2>
+          <h2 className="marketplace-title">
+            <span className=""> &nbsp;</span>Tools Hub
+          </h2>
         </div>
         <div className=" relative search-input md:mt-0 mt-5">
           <Input
@@ -87,11 +121,14 @@ const MarketplaceComponent = () => {
             className=" font-michroma"
           />
         </div>
+        <div className=" lg:hidden block">
+          <h2 className="marketplace-title">AI Security Tools Hub</h2>
+        </div>
       </div>
       {/*======================================================================================
                                          FILTERS   
       =========================================================================================*/}
-      <div className="flex gap-10 items-start mt-9 pb-6 border-b-[1px] border-[#79797B]">
+      {/* <div className="flex gap-10 items-start mt-9 pb-6 border-b-[1px] border-[#79797B]">
         <button
           onClick={handleRemoveAll}
           className="reset-bg px-3 py-1 flex gap-3 items-center text-base font-medium min-w-28 min-h-8"
@@ -134,7 +171,7 @@ const MarketplaceComponent = () => {
               </div>
             ))}
         </div>
-      </div>
+      </div> */}
       {/*===================================================================================== 
                           Discover More Tools
       ======================================================================================*/}
@@ -142,12 +179,17 @@ const MarketplaceComponent = () => {
         title: "Discover More Tools",
         para: "Browse through our collections to learn more about new use cases to implement in your app ",
       })}
-      <div className="grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 mt-10 gap-[3rem]">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-10 gap-[3rem]">
         {Object?.values(DISCOVERTOOLS)?.map((data: any, key: number) => (
           <div key={key} className="discover-card ">
             <div className="w-full h-[8.3rem] relative">
               <div className="w-full h-full absolute left-0 top-0">
-                <Image src={data?.imageUrl} alt={data.name} fill />
+                <Image
+                  src={data?.imageUrl}
+                  alt={data.name}
+                  fill
+                  className=" object-cover object-left-tops rounded-tl-[1.25rem] rounded-tr-[1.25rem]"
+                />
               </div>
             </div>
             <div className="discover-card-content">
@@ -163,13 +205,14 @@ const MarketplaceComponent = () => {
         title: "Recommended Tools",
         para: "Tools Curated specifically for you based on functionality offered, performance and requirement.",
       })}
-      <div className="w-[2000px]">
-        <div className="flex gap-5 mt-7 items-stretch">
+      {/* <div className="w-[1300px]"> */}
+      <div className="pt-9 pb-12 relative">
+        <Slider {...settings}>
           {Object?.values(RECOMMENDED_TOOLS)?.map((data: any, key: number) => (
             <Link href={"/marketplace-details"} key={key}>
               <div
                 // key={key}
-                className={`recommended-card  font-michroma`}
+                className={`recommended-card  text-white font-michroma`}
               >
                 {/* background */}
                 <div className="w-full h-full absolute left-0 top-0 -z-10">
@@ -182,7 +225,7 @@ const MarketplaceComponent = () => {
                 {/* content */}
                 <div className="flex justify-between items-start">
                   <div className="relative w-[6.25rem] h-[1.8rem] flex justify-center items-center">
-                    <div className="absolute left-0 top-0 w-full h-full">
+                    <div className="absolute left-0 top-0 w-full h-full -z-10">
                       <Image src="/bgs/verfied-bg.svg" alt="bg" fill />
                     </div>
                     <h4 className="text-xs">
@@ -209,8 +252,12 @@ const MarketplaceComponent = () => {
               </div>
             </Link>
           ))}
-        </div>
+          {/* <div className="flex justify-end items-end">
+            <button>Prev</button>
+          </div> */}
+        </Slider>
       </div>
+      {/* </div> */}
       {/*===================================================================================== 
                           Popular Tools
       ======================================================================================*/}
@@ -218,8 +265,8 @@ const MarketplaceComponent = () => {
         title: "Popular Tools",
         para: "Tools that are popular and used frequently on ARMUR.",
       })}
-      <div className="w-[2000px]">
-        <div className="flex gap-5 mt-7 items-stretch">
+      <div className="pt-9 pb-12 relative">
+        <Slider {...settings}>
           {Object?.values(POPULAR_TOOLS)?.map((data: any, key: number) => (
             <Link href={"/marketplace-details"} key={key}>
               <div
@@ -263,7 +310,7 @@ const MarketplaceComponent = () => {
               </div>
             </Link>
           ))}
-        </div>
+        </Slider>
       </div>
     </div>
   );

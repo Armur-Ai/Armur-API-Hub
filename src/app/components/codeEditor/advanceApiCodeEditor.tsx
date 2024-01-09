@@ -185,7 +185,7 @@ const AdvanceApiCodeEditor = () => {
           //   className="code-block-two-custom-class"
           language={language}
           text={languageDemo}
-          showLineNumbers={lineNumbers}
+          showLineNumbers={true}
           theme={selectedTheme === "dark" ? anOldHope : a11yLight}
           // theme={a11yLight}
           wrapLongLines={true}

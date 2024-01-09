@@ -3,7 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import "./animation.scss";
 :root {
   --foreground-rgb: 0, 0, 0;
   --main-background: 5, 0, 0;
@@ -111,4 +111,30 @@ body {
 .ant-tabs-content,
 .ant-tabs-tabpane {
   height: 100%;
+}
+//slider
+.slick-slider {
+  position: static !important;
+}
+.slick-prev,
+.slick-next {
+  top: 95% !important;
+}
+
+.slick-next::before,
+.slick-prev:before {
+  content: url("https://res.cloudinary.com/sls/image/upload/v1704700922/armur/arrow_h3w3kf.svg") !important;
+}
+
+.slick-prev {
+  rotate: 180deg;
+  left: 95% !important;
+
+  @media (max-width: 550px) {
+    left: 85% !important;
+  }
+}
+.slick-next {
+  top: 97% !important;
+  right: -1% !important;
 }

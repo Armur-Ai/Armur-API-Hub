@@ -109,8 +109,26 @@
         }
     }
     .language-tabs-container {
-        @apply bg-[#37367E40] rounded-tl-xl rounded-tr-xl;
+        @apply rounded-tl-xl rounded-tr-xl relative bg-[#37367e40];
+        // border: double 4px transparent;
+        // border-radius: 80px;
+        // background-image: linear-gradient(#37367e40, #37367e40), url("/public/bgs/advance-top-bg.svg");
+        // background-origin: border-box;
+        // background-clip: padding-box, border-box;
 
+        &::after {
+            content: "";
+            position: absolute;
+            left: -1px;
+            top: -1px;
+            bottom: -1px;
+            right: -1px;
+            z-index: 10;
+            width: 100%;
+            height: 102%;
+            background-image: url("https://res.cloudinary.com/sls/image/upload/v1704269759/armur/advance-top-bg_lo33bn.svg");
+            background-size: cover;
+        }
         button {
             border: 0px;
             // border-top-left-radius: 8px;

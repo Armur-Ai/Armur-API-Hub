@@ -28,6 +28,7 @@
 .search-input {
     height: 45px;
     width: 450px;
+    // @apply w-2/6 h-11;
 
     &::after {
         @apply w-full h-full -z-10 -left-0.5 -right-0.5 -top-0.5 -bottom-0.5 absolute bg-no-repeat;
@@ -51,6 +52,7 @@
 
 .discover-card {
     @apply w-full min-h-[12.5rem] rounded-[1.25rem];
+    animation: 1s ease-out 0s 1 slideInFromBottom;
 }
 .discover-card-content {
     background: linear-gradient(105.87deg, rgba(255, 255, 255, 0.24) 3.04%, rgba(255, 255, 255, 0) 96.05%);
