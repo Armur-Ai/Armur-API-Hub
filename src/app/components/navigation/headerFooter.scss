@@ -2,6 +2,8 @@
     background: linear-gradient(216.562deg, rgba(41, 41, 41, 0.6) 0%, rgba(41, 41, 41, 0) 100%);
     backdrop-filter: blur(10px);
     animation: 1s ease-out 0s 1 slideInFromTop;
+    // position: sticky;
+    // top: 0;
 
     li {
         line-height: 26px !important;
@@ -73,4 +75,36 @@
     @media screen and (max-width: 768px) {
         flex-direction: column-reverse;
     }
+}
+////////////////////////////////////////
+
+label {
+    @apply flex flex-col w-6 cursor-pointer;
+}
+
+label span {
+    @apply bg-white rounded h-0.5 my-0.5 mx-0 w-full;
+    transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+    transform-origin: bottom;
+
+    transform: rotatez(45deg) translate(4px, 4px);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+    transform-origin: top;
+    transform: rotatez(-45deg);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+    // transform-origin: bottom;
+    // width: 50%;
+    // transform: translate(2px, -11px) rotatez(45deg);
+    display: none;
 }

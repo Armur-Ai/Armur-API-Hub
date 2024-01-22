@@ -1,3 +1,5 @@
+@import "../../function.scss";
+
 .ant-select {
      color: white;
      position: relative;
@@ -14,7 +16,7 @@
 }
 // bg-[#ffffff1f]
 .ant-select-dropdown {
-     @apply rounded bg-[#332d2d]  py-3 px-0 z-[9998] #{!important};
+     @apply py-3 px-0 rounded bg-[#332d2d] z-[9998] #{!important};
 
      .ant-select-item {
           @apply text-sm font-michroma px-8 tracking-wide font-normal text-white #{!important};
@@ -27,5 +29,5 @@
      @apply text-sm tracking-wider font-michroma text-white px-4 #{!important};
 }
 .ant-select-single {
-     @apply h-[2.6rem];
+     @apply h-[2.5rem] #{!important};
 }

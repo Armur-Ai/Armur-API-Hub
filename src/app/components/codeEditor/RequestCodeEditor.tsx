@@ -11,16 +11,18 @@ const RequestCodeEditor = () => {
   const [lineNumbers, toggleLineNumbers] = useState(false);
 
   return (
-    <div className="h-full codeTab-block">
-      <CopyBlock
-        language={language}
-        text={languageDemo}
-        showLineNumbers={lineNumbers}
-        theme={anOldHope}
-        wrapLongLines
-        codeBlock
-        customStyle={{ height: "100%;" }}
-      />
+    <div className="codeTab-block">
+      <div className="h-full custom-border">
+        <CopyBlock
+          language={language}
+          text={languageDemo}
+          showLineNumbers={lineNumbers}
+          theme={anOldHope}
+          wrapLongLines
+          codeBlock
+          customStyle={{ height: "100%;" }}
+        />
+      </div>
     </div>
   );
 };

@@ -16,7 +16,7 @@ const ExtensionCard = (props: extensionCardProps) => {
   const { iconUrl, heading, description, url, width, height } = props;
 
   return (
-    <div className="flex w-3/6 gap-4 relative px-4 py-5 items-start extension-card">
+    <div className="flex w-3/6 gap-4 relative px-4 py-5 items-start justify-between custom-border extension-card">
       {/* <div className=" absolute w-full h-full left-0 top-0">
         <Image src="/bgs/extension-bg.svg" alt="bgs" fill />
       </div> */}

@@ -2,39 +2,48 @@
     "DISCOVERTOOLS": [
         {
             "imageUrl": "/marketplace/web-icon.svg",
-            "name": "Web3 Auditing tools"
+            "name": "Web3 Auditing tools",
+            "link": "/marketplace/web3-auditing-tool"
         },
         {
             "imageUrl": "/marketplace/code-scan.svg",
-            "name": "Code scan"
+            "name": "Code scan",
+            "link": "/marketplace/code-scan"
         },
         {
             "imageUrl": "/marketplace/sec-ops.svg",
-            "name": "SecOps"
+            "name": "SecOps",
+            "link": "/marketplace/sec-ops"
         },
         {
             "imageUrl": "/marketplace/api-security.svg",
-            "name": "API Security"
+            "name": "API Security",
+            "link": "/marketplace/api-security"
         },
         {
             "imageUrl": "/marketplace/pentesting.svg",
-            "name": "Pentesting"
+            "name": "Pentesting",
+            "link": "/marketplace/pentesting"
         },
         {
             "imageUrl": "/marketplace/recan.svg",
-            "name": "Recon"
+            "name": "Recon",
+            "link": "/marketplace/recon"
         },
         {
             "imageUrl": "/marketplace/web3-sec.svg",
-            "name": "Web3 sec"
+            "name": "Web3 sec",
+            "link": "/marketplace/web3-sec"
         },
         {
             "imageUrl": "/marketplace/db-security.svg",
-            "name": "DB Security"
+            "name": "DB Security",
+            "link": "/marketplace/db-security"
         },
         {
             "imageUrl": "/marketplace/plugin.svg",
-            "name": "Plugin"
+            "name": "Plugin",
+            "link": "/marketplace/plugin"
         }
     ],
     "RECOMMENDED_TOOLS": [

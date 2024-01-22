@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Fragment, useEffect } from "react";
 // import { Michroma } from "next/font/google";
 import Image from "next/image";
 import "./team.scss";
 import TeamCard from "./teamCard";
+import TeamHeroImage from "./teamHeroImage";
 
 // const michroma = Michroma({ subsets: ["latin"], weight: ["400"] });
 
@@ -39,8 +40,8 @@ const Team = () => {
   ];
 
   return (
-    <div>
-      <div className=" relative pt-[18.7rem] min-h-[99rem]">
+    <Fragment>
+      <div className="relative pt-[18.7rem] min-h-[99rem]">
         <div className="flex flex-col gap-3 justify-center items-center">
           <h1 className="page-title">Founding Partners</h1>
           <p
@@ -51,16 +52,27 @@ const Team = () => {
             Founding members have what it takes to bring the vision to life.
           </p>
         </div>
+        <TeamHeroImage />
       </div>
       <div className="grid xl:grid-cols-4 lg:grid-cols-2  grid-cols-1 flex-wrap gap-12 items-start lg:px-[10rem] px-8 w-full">
         {team?.map((data: any, key: number) => (
           <div key={key} className={`flex flex-col relative  team-card gap-12`}>
-            <div className=" relative transfrom-1200 h-[17rem] team-image-section">
+            <div className=" relative transfrom-1200 h-[275px] team-image-section">
               <div className=" absolute left-0 top-0 w-full h-full mask-image">
-                <Image src={data.maskImage} alt={data.title} fill />
+                <Image
+                  src={data.maskImage}
+                  alt={data.title}
+                  fill
+                  objectFit="contain"
+                />
               </div>
               <div className=" absolute left-0 top-0 w-full h-full profile-image">
-                <Image src={data.profileImage} alt={data.title} fill />
+                <Image
+                  src={data.profileImage}
+                  alt={data.title}
+                  fill
+                  objectFit="contain"
+                />
               </div>
             </div>
             {/* flex flex-[0_0_auto] gap-6  */}
@@ -145,7 +157,7 @@ const Team = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Fragment>
   );
 };
 

@@ -55,3 +55,21 @@
     aspect-ratio: 1/1;
     width: 170px;
 }
+
+.team-card {
+    &:hover {
+        z-index: 9999;
+        background: rgb(5, 0, 0);
+        transform: scale(1.04);
+    }
+}
+.custom-border--team-card {
+    &::after {
+        background: radial-gradient(11.06% 58.68% at 52.22% -10.09%, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
+            radial-gradient(12.64% 57.38% at 0% -10.09%, #ffffff 0%, rgba(255, 255, 255, 0.19) 100%),
+            radial-gradient(51.16% 72.97% at 52.22% 136.24%, #e065ff 0%, rgba(224, 102, 255, 0.05) 100%);
+    }
+}
+.scroll-animation {
+    transform: translatex(0%) translatey(0%);
+}

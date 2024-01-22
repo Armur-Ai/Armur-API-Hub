@@ -121,66 +121,68 @@ const AdvanceApiCodeEditor = () => {
 
   return (
     <div className="mt-5 p-4 code-block-container-two">
-      <div className="language-tabs-container flex items-center justify-between">
-        <div className="flex language_buttons w-10/12  items-center">
-          {chainOptions?.map((data, index) => {
-            return (
-              <button
-                key={index}
-                onClick={() => onTabClickHandler(data)}
-                className={`font-inter text-sm px-6 py-3 ${
-                  language === data?.label ? "bg-[#000000]" : ""
-                }`}
-              >
-                {data.label}
-              </button>
-            );
-          })}
-        </div>
-        <div className="flex ml-4 w-2/12">
-          <div
-            // onClick={() => themeChangeHadnler("dark")}
-            className={
-              selectedTheme === "dark"
-                ? "hover:cursor-pointer rounded-full w-6 h-6 mr-4 bg-[#81D4FA]"
-                : "hover:cursor-pointer rounded-full w-6 h-6 mr-4 bg-[#81D4FA]"
-            }
-          ></div>
-          <div
-            // onClick={() => themeChangeHadnler("light")}
-            className={
-              selectedTheme === "light"
-                ? "hover:cursor-pointer border-[1px] border-white rounded-full w-6 h-6 mr-4 bg-[#252463]"
-                : "hover:cursor-pointer border-[1px] border-white rounded-full w-6 h-6 mr-4 bg-[#252463]"
-            }
-          ></div>
-          <div
-            // onClick={() => themeChangeHadnler("light")}
-            className={
-              selectedTheme === "light"
-                ? "hover:cursor-pointer rounded-full w-6 h-6 mr-4 bg-[#82D995]"
-                : "hover:cursor-pointer rounded-full w-6 h-6 mr-4 bg-[#82D995]"
-            }
-          ></div>
-          <div
-            // onClick={() => themeChangeHadnler("light-blue")}
-            className={
-              selectedTheme === "light-blue"
-                ? "hover:cursor-pointer rounded-full w-6 h-6 mr-4 bg-[#D28888]"
-                : "hover:cursor-pointer rounded-full w-6 h-6 mr-4 bg-[#D28888]"
-            }
-          ></div>
-        </div>
+      <div className="custom-border custom-border--language-tabs-container ">
+        <div className=" language-tabs-container flex items-center justify-between">
+          <div className="flex language_buttons w-10/12  items-center">
+            {chainOptions?.map((data, index) => {
+              return (
+                <button
+                  key={index}
+                  onClick={() => onTabClickHandler(data)}
+                  className={`font-inter text-sm px-6 py-3 ${
+                    language === data?.label ? "bg-[#000000]" : ""
+                  }`}
+                >
+                  {data.label}
+                </button>
+              );
+            })}
+          </div>
+          <div className="flex ml-4 w-2/12">
+            <div
+              // onClick={() => themeChangeHadnler("dark")}
+              className={
+                selectedTheme === "dark"
+                  ? "hover:cursor-pointer rounded-full w-6 h-6 mr-4 bg-[#81D4FA]"
+                  : "hover:cursor-pointer rounded-full w-6 h-6 mr-4 bg-[#81D4FA]"
+              }
+            ></div>
+            <div
+              // onClick={() => themeChangeHadnler("light")}
+              className={
+                selectedTheme === "light"
+                  ? "hover:cursor-pointer border-[1px] border-white rounded-full w-6 h-6 mr-4 bg-[#252463]"
+                  : "hover:cursor-pointer border-[1px] border-white rounded-full w-6 h-6 mr-4 bg-[#252463]"
+              }
+            ></div>
+            <div
+              // onClick={() => themeChangeHadnler("light")}
+              className={
+                selectedTheme === "light"
+                  ? "hover:cursor-pointer rounded-full w-6 h-6 mr-4 bg-[#82D995]"
+                  : "hover:cursor-pointer rounded-full w-6 h-6 mr-4 bg-[#82D995]"
+              }
+            ></div>
+            <div
+              // onClick={() => themeChangeHadnler("light-blue")}
+              className={
+                selectedTheme === "light-blue"
+                  ? "hover:cursor-pointer rounded-full w-6 h-6 mr-4 bg-[#D28888]"
+                  : "hover:cursor-pointer rounded-full w-6 h-6 mr-4 bg-[#D28888]"
+              }
+            ></div>
+          </div>
 
-        {/* <div className="w-2/12 flex justify-center">
+          {/* <div className="w-2/12 flex justify-center">
           <CopyOutlined
             onClick={handleCopy}
             className="hover:cursor-pointer hover:text-[#4658ff]"
             style={{ fontSize: "22px", zIndex: "999999" }}
           />
         </div> */}
+        </div>
       </div>
-      <div>
+      <div className="custom-border custom-border--code-block">
         <CopyBlock
           //   className="code-block-two-custom-class"
           language={language}

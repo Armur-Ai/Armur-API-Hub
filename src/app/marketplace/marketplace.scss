@@ -1,5 +1,5 @@
 .marketplace-title {
-    @apply text-[2.5rem] leading-[3.135rem];
+    @apply xl:text-[2.5rem] text-3xl leading-[3.135rem];
     color: transparent;
     width: auto;
     background: linear-gradient(
@@ -140,5 +140,74 @@
             #dbdbdb 93.06%,
             #f3f3f3 98.99%
         );
+    }
+}
+.discoverSlider {
+    .slick-prev,
+    .slick-next {
+        display: none !important;
+    }
+    .discover-card {
+        width: 90% !important;
+        height: auto;
+        background: #030101;
+        min-height: auto;
+        margin: 0 auto;
+    }
+    .discover-card-image {
+        height: 5.5rem;
+    }
+    .slick-slide {
+        margin-top: 1.5rem;
+    }
+    .slick-active {
+        margin-top: 0;
+
+        .discover-card {
+            background: #030101;
+            &::after {
+                margin: -3px;
+            }
+        }
+        .discover-card-image {
+            height: 8rem;
+        }
+    }
+    .discover-card {
+        position: relative;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+        &::after {
+            content: "";
+            background: linear-gradient(
+                90.19deg,
+                #636363 0.17%,
+                #e1e1e1 4.7%,
+                #e6e6e6 9.33%,
+                #ffffff 16.02%,
+                #dfdfdf 26.31%,
+                #8e8e8e 46.39%,
+                #b1b1b1 54.27%,
+                #747474 56.29%,
+                #646464 63.42%,
+                #5f5f5f 66.91%,
+                #656565 70.33%,
+                #767676 75.27%,
+                #939393 85.36%,
+                #bababa 88.12%,
+                #d3d3d3 91.09%,
+                #dbdbdb 93.06%,
+                #f3f3f3 98.99%
+            );
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            margin: -1px;
+            border-radius: inherit;
+        }
     }
 }

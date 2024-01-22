@@ -87,11 +87,11 @@ const Footer = () => {
             </h3>
           </div>
           <div className="flex flex-col gap-14">
-            <div className="flex flex-col gap-5">
-              <h4 className=" text-base tracking-[0.06em] text-[rgba(255,255,255,0.5)]">
+            {/* <div className="flex flex-col gap-5"> */}
+            {/* <h4 className=" text-base tracking-[0.06em] text-[rgba(255,255,255,0.5)]">
                 Menu
-              </h4>
-              <div className="flex lg:flex-row flex-col gap-11">
+              </h4> */}
+            {/* <div className="flex lg:flex-row flex-col gap-11">
                 {menuLink?.map((data: any, key: number) => (
                   <div
                     key={key}
@@ -100,8 +100,8 @@ const Footer = () => {
                     <Link href={data.link}>{data.name}</Link>
                   </div>
                 ))}
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
             <div className="flex flex-col gap-5">
               <h4 className=" text-base tracking-[0.06em] text-[rgba(255,255,255,0.5)]">
                 Backed By
