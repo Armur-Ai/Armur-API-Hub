@@ -62,7 +62,7 @@ const Header = () => {
   return (
     <div className="header fixed w-full top-0 z-[9999] border-b-[0.5px] border-black">
       <header className="flex items-center justify-between py-6 xl:px-24 px-12  relative">
-        <Link href={"/"}>
+        <a href={"https://www.armur.ai/"} target="_self">
           <Image
             src="/logo/main_logo.png"
             alt="Armur Logo"
@@ -70,7 +70,7 @@ const Header = () => {
             height={100}
             priority
           />
-        </Link>
+        </a>
         {/* <div className="lg:flex hidden items-center shrink">
           <ul className={`flex items-center xl:gap-10 gap-4 font-michroma`}>
             {navLink?.map((data: any, key: number) => (

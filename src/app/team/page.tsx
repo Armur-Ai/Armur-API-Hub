@@ -54,7 +54,7 @@ const Team = () => {
         </div>
         <TeamHeroImage />
       </div>
-      <div className="grid xl:grid-cols-4 lg:grid-cols-2  grid-cols-1 flex-wrap gap-12 items-start lg:px-[10rem] px-8 w-full">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-2  grid-cols-1 flex-wrap gap-12 items-start lg:px-[5rem] px-8 w-full">
         {team?.map((data: any, key: number) => (
           <div key={key} className={`flex flex-col relative  team-card gap-12`}>
             <div className=" relative transfrom-1200 h-[275px] team-image-section">
@@ -63,7 +63,8 @@ const Team = () => {
                   src={data.maskImage}
                   alt={data.title}
                   fill
-                  objectFit="contain"
+                  className="object-contain"
+                  // objectFit="contain"
                 />
               </div>
               <div className=" absolute left-0 top-0 w-full h-full profile-image">
@@ -71,7 +72,8 @@ const Team = () => {
                   src={data.profileImage}
                   alt={data.title}
                   fill
-                  objectFit="contain"
+                  className="object-contain"
+                  // objectFit="contain"
                 />
               </div>
             </div>
@@ -84,7 +86,7 @@ const Team = () => {
               </div>
               <div
                 className={`relative flex flex-col  team-card-content ${
-                  team?.length - 1 === key ? " gap-8" : "gap-16"
+                  key === 0 ? "gap-5" : ""
                 }`}
               >
                 <h3 className={`font-michroma text-base uppercase w-auto`}>

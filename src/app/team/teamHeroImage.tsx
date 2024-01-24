@@ -13,6 +13,7 @@ const TeamHeroImage = () => {
       });
     }
   }, []);
+
   return (
     <div className="w-[1021px] h-[1021px] mx-auto relative -z-10 -mt-[250px]">
       <div className="w-[618px] h-[618px] absolute right-[20%] top-[20%]">

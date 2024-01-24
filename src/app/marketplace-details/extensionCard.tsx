@@ -24,7 +24,8 @@ const ExtensionCard = (props: extensionCardProps) => {
         src={iconUrl}
         alt={heading}
         priority
-        objectFit="top"
+        className="object-top"
+        // objectFit="top"
         width={width}
         height={height}
       />

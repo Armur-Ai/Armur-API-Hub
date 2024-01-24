@@ -70,7 +70,7 @@ const MarketplaceComponent = () => {
       <div className="md:grid hidden xl:grid-cols-4 lg:grid-cols-3  grid-cols-2 mt-10 gap-[3rem]">
         {Object?.values(TOOLS)[0]?.map((data: any, key: number) => (
           <div key={key} className="discover-card ">
-            <Link href={data?.link}>
+            <Link href={"/marketplace-tools"}>
               <div className="w-full h-[8.3rem] relative">
                 <div className="w-full h-full absolute left-0 top-0">
                   <Image

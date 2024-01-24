@@ -4,10 +4,10 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Select } from "antd";
-import { POPULAR_TOOLS } from "../data.json";
+import TOOLS from "../marketplace/data.json";
 import { CloseOutlined } from "@ant-design/icons";
-import MarketplaceCard from "../marketplaceCard";
-import "../marketplace.scss";
+import MarketplaceCard from "../marketplace/marketplaceCard";
+import "../marketplace/marketplace.scss";
 
 const MarketplaceComponentDetails = () => {
   const [selectedFilter, setSelectedFilter] = useState<string[]>([]);
@@ -100,7 +100,7 @@ const MarketplaceComponentDetails = () => {
                                         CARDS
       ============================================================================================*/}
       <div className="flex gap-10 py-12 flex-wrap">
-        {Object?.values(POPULAR_TOOLS)?.map((data: any, key: number) => (
+        {Object?.values(TOOLS)[2]?.map((data: any, key: number) => (
           <Link href={"/marketplace-details"} key={key}>
             <MarketplaceCard
               {...{

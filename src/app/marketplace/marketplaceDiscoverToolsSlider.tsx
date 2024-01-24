@@ -23,7 +23,7 @@ const MarketplaceDiscoverToolsSlider = () => {
       <Slider {...sliderSetting}>
         {Object?.values(TOOLS)[0]?.map((data: any, key: number) => (
           <div key={key} className="discover-card mx-3 ">
-            <Link href={data?.link}>
+            <Link href={"/marketplace-tools"}>
               <div className="w-full discover-card-image relative">
                 <div className="w-full h-full absolute left-0 top-0">
                   <Image

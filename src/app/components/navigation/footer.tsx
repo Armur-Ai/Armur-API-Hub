@@ -73,7 +73,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="flex lg:flex-row flex-col gap-8 justify-between items-start lg:items-center py-8 border-b-[1px] border-[rgba(255,255,255,0.1)]">
           <div className="flex flex-col gap-16">
-            <Link href={"/"}>
+            <a href={"https://www.armur.ai/"} target="_self">
               <Image
                 src="/logo/main_logo.png"
                 alt="Armur Logo"
@@ -81,7 +81,7 @@ const Footer = () => {
                 height={100}
                 priority
               />
-            </Link>
+            </a>
             <h3 className=" text-2xl uppercase tracking-widest font-semibold">
               SECURING THE FUTURE WITH A.I.
             </h3>
