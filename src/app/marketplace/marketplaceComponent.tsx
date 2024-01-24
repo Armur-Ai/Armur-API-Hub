@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Input } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
-import { DISCOVERTOOLS } from "./data.json";
+import TOOLS from "./data.json";
 import MarketplaceDiscoverToolsSlider from "./marketplaceDiscoverToolsSlider";
 import MarketplacePopularToolsSlider from "./marketplacePopularToolsSlider";
 import MarketplaceRecommendedToolsSlider from "./marketplaceRecommendedToolsSlider";
@@ -68,7 +68,7 @@ const MarketplaceComponent = () => {
         para: "Browse through our collections to learn more about new use cases to implement in your app ",
       })}
       <div className="md:grid hidden xl:grid-cols-4 lg:grid-cols-3  grid-cols-2 mt-10 gap-[3rem]">
-        {Object?.values(DISCOVERTOOLS)?.map((data: any, key: number) => (
+        {Object?.values(TOOLS)[0]?.map((data: any, key: number) => (
           <div key={key} className="discover-card ">
             <Link href={data?.link}>
               <div className="w-full h-[8.3rem] relative">

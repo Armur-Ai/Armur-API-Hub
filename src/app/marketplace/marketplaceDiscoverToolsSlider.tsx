@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Slider from "react-slick";
-import { DISCOVERTOOLS } from "./data.json";
+import TOOLS from "./data.json";
 
 const MarketplaceDiscoverToolsSlider = () => {
   const sliderSetting: any = {
@@ -21,7 +21,7 @@ const MarketplaceDiscoverToolsSlider = () => {
   return (
     <div className="md:hidden block py-10">
       <Slider {...sliderSetting}>
-        {Object?.values(DISCOVERTOOLS)?.map((data: any, key: number) => (
+        {Object?.values(TOOLS)[0]?.map((data: any, key: number) => (
           <div key={key} className="discover-card mx-3 ">
             <Link href={data?.link}>
               <div className="w-full discover-card-image relative">

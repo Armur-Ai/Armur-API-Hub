@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Slider from "react-slick";
 import MarketplaceCard from "./marketplaceCard";
-import { RECOMMENDED_TOOLS } from "./data.json";
+import TOOLS from "./data.json";
 
 const MarketplaceRecommendedToolsSlider = () => {
   const recommendedSettings: any = {
@@ -60,7 +60,7 @@ const MarketplaceRecommendedToolsSlider = () => {
   return (
     <div className="pt-9 pb-12 relative md:px-0 px-6">
       <Slider {...recommendedSettings}>
-        {Object?.values(RECOMMENDED_TOOLS)?.map((data: any, key: number) => (
+        {Object?.values(TOOLS)[1]?.map((data: any, key: number) => (
           <Link href={"/marketplace-details"} key={key}>
             <MarketplaceCard
               {...{

@@ -1,7 +1,7 @@
 import React from "react";
 import MarketplaceCard from "./marketplaceCard";
 import Slider from "react-slick";
-import { POPULAR_TOOLS } from "./data.json";
+import TOOLS from "./data.json";
 import Link from "next/link";
 
 const MarketplacePopularToolsSlider = () => {
@@ -60,7 +60,7 @@ const MarketplacePopularToolsSlider = () => {
   return (
     <div className="pt-9 pb-12 relative md:px-0 px-6">
       <Slider {...popularSettings}>
-        {Object?.values(POPULAR_TOOLS)?.map((data: any, key: number) => (
+        {Object?.values(TOOLS)[2]?.map((data: any, key: number) => (
           <Link href={"/marketplace-details"} key={key}>
             <MarketplaceCard
               {...{
