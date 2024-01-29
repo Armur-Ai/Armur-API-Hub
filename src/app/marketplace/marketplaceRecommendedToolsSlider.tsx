@@ -1,10 +1,23 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import MarketplaceCard from "./marketplaceCard";
 import TOOLS from "./data.json";
+import TOOLS_DATA from "../marketplace/securityTools.json"
 
 const MarketplaceRecommendedToolsSlider = () => {
+  const [recommandedTools, setRecommandedTools] = useState<string[]>([]);
+
+
+
+  useEffect(() => {
+    const TOOLSDATA: any = TOOLS_DATA;
+      
+    setRecommandedTools(TOOLSDATA["codeScan"])
+  },[])
+
+
+
   const recommendedSettings: any = {
     dots: false,
     infinite: true,
@@ -60,7 +73,7 @@ const MarketplaceRecommendedToolsSlider = () => {
   return (
     <div className="pt-9 pb-12 relative md:px-0 px-6">
       <Slider {...recommendedSettings}>
-        {Object?.values(TOOLS)[1]?.map((data: any, key: number) => (
+        {Object?.values(recommandedTools)?.map((data: any, key: number) => (
           <Link href={"/marketplace-details"} key={key}>
             <MarketplaceCard
               {...{

@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import MarketplaceCard from "./marketplaceCard";
 import Slider from "react-slick";
 import TOOLS from "./data.json";
 import Link from "next/link";
+import TOOLS_DATA from "../marketplace/securityTools.json"
 
 const MarketplacePopularToolsSlider = () => {
+  const [popularTools, setpopularTools] = useState<string[]>([]);
+
+
+
+  useEffect(() => {
+    const TOOLSDATA: any = TOOLS_DATA;
+    const web3:any =  TOOLSDATA["web3"]; // Replace with your actual function or data source
+    const codeScan: any= TOOLSDATA["codeScan"];
+
+
+      
+    setpopularTools(web3.concat(codeScan))
+  },[])
+
   const popularSettings: any = {
     dots: false,
     infinite: true,
@@ -60,7 +75,7 @@ const MarketplacePopularToolsSlider = () => {
   return (
     <div className="pt-9 pb-12 relative md:px-0 px-6">
       <Slider {...popularSettings}>
-        {Object?.values(TOOLS)[2]?.map((data: any, key: number) => (
+        {Object?.values(popularTools)?.map((data: any, key: number) => (
           <Link href={"/marketplace-details"} key={key}>
             <MarketplaceCard
               {...{

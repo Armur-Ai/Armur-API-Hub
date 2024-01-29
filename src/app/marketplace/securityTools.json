@@ -1,0 +1,706 @@
+{
+    "web3": [
+        {
+            "id": 1,
+            "name": "Solidity (Smart Contract)",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "route": "sol",
+            "extension": "sol",
+            "codeBlockName": "solidity",
+            "codeBlockLanguage": "javascript",
+            "disabled": false,
+            "imageUrl": "/marketplace/sphere.svg",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.sol-armur-ai-audit",
+            "vsExtensionInfo": "Solidity Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolName": "Solidity (Smart Contract)",
+            "tabKey": "1"
+        },
+        {
+            "id": 2,
+            "name": "MOVE (Smart Contract)",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "route": "mov",
+            "extension": "move",
+            "codeBlockName": "mov",
+            "codeBlockLanguage": "rust",
+            "disabled": false,
+            "imageUrl": "/marketplace/sphere.svg",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.mov-armur-ai-audit",
+            "vsExtensionInfo": "Move Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolName": "Move",
+            "tabKey": "1"
+        },
+        {
+            "id": 3,
+            "name": "Ink! (Polkadot) Smart Contract",
+            "description": "Check for vulnerabilities, security issues and bugs in your Javascript code",
+            "route": "Ink! (Polkadot) Smart Contract",
+            "extension": "mov",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "vsExtensionUrl": "Coming Soon",
+            "vsExtensionInfo": "Coming Soon",
+            "packageName": "Use it in NPM Dependency",
+            "packageInfo": "JavaScript primarily uses npm (Node Package Manager) for package management. Another popular package manager for JavaScript is yarn, which provides better performance and more predictable dependency resolution than npm.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1702025144/npm.png",
+            "toolName": "Ink! (Polkadot) Smart Contract"
+        },
+        {
+            "id": 4,
+            "name": "Solana auditor",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "route": "Solana auditor",
+            "extension": "mov",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "vsExtensionUrl": "Coming Soon",
+            "vsExtensionInfo": "Coming Soon",
+            "packageName": "Use it in NPM Dependency",
+            "packageInfo": "JavaScript primarily uses npm (Node Package Manager) for package management. Another popular package manager for JavaScript is yarn, which provides better performance and more predictable dependency resolution than npm.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1702025144/npm.png",
+            "toolName": "Solana auditor"
+        },
+        {
+            "id": 5,
+            "name": "Tezos auditor",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "extension": "mov",
+            "route": "Ethereum Recon",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "vsExtensionUrl": "Coming Soon",
+            "vsExtensionInfo": "Coming Soon",
+            "packageName": "Use it in NPM Dependency",
+            "packageInfo": "JavaScript primarily uses npm (Node Package Manager) for package management. Another popular package manager for JavaScript is yarn, which provides better performance and more predictable dependency resolution than npm.",
+            "toolName": "Tezos auditor"
+        },
+        {
+            "id": 6,
+            "name": "Algorand auditor",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "route": "MEV Attack Bot",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "vsExtensionUrl": "Coming Soon",
+            "vsExtensionInfo": "Coming Soon",
+            "packageName": "Use it in NPM Dependency",
+            "packageInfo": "JavaScript primarily uses npm (Node Package Manager) for package management. Another popular package manager for JavaScript is yarn, which provides better performance and more predictable dependency resolution than npm.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1702025144/npm.png",
+            "toolName": "Algorand auditor"
+        }
+    ],
+    "codeScan": [
+        {
+            "id": 1,
+            "name": "GO Security Scan",
+            "description": "Check for security issues, vulnerabilities and bugs in your Golang code",
+            "route": "go",
+            "extension": "go",
+            "codeBlockName": "go",
+            "codeBlockLanguage": "go",
+            "disabled": false,
+            "imageUrl": "/marketplace/sphere.svg",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.armur-ai-audit",
+            "vsExtensionInfo": "Go Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "GO Security Scan",
+            "tabKey": "2"
+        },
+        {
+            "id": 2,
+            "name": "RUST Vulnerability Scan",
+            "description": "Check for vulnerabilities, security issues and bugs in your Rust code",
+            "route": "rust",
+            "extension": "rs",
+            "codeBlockName": "rust",
+            "codeBlockLanguage": "rust",
+            "disabled": false,
+            "imageUrl": "/marketplace/sphere.svg",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.rust-armur-ai-audit",
+            "vsExtensionInfo": "Rust Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "RUST Vulnerability Scan",
+            "tabKey": "2"
+        },
+        {
+            "id": 3,
+            "name": "Javascript Security Audit",
+            "description": "Check for vulnerabilities, security issues and bugs in your Javascript code",
+            "route": "js",
+            "extension": "js",
+            "codeBlockName": "javascript",
+            "codeBlockLanguage": "javascript",
+            "disabled": false,
+            "imageUrl": "/marketplace/sphere.svg",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.js-armur-ai-audit",
+            "vsExtensionInfo": "Javascript Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Javascript Security Audit",
+            "tabKey": "2"
+        },
+        {
+            "id": 4,
+            "name": "Python Code Audit",
+            "description": "Check for vulnerabilities, security issues and bugs in your Python code",
+            "route": "python",
+            "extension": "py",
+            "codeBlockName": "python",
+            "codeBlockLanguage": "python",
+            "disabled": false,
+            "imageUrl": "/marketplace/sphere.svg",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
+        }
+    ],
+    "llmSecurity": [
+        {
+            "id": 1,
+            "name": " Malicious LLM Scanner",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "route": "go",
+            "extension": "go",
+            "codeBlockName": "go",
+            "codeBlockLanguage": "go",
+            "disabled": true,
+            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1701347770/Property_1_3D_7.png",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.armur-ai-audit",
+            "vsExtensionInfo": "Go Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in go mod",
+            "packageInfo": " The primary tool for managing dependencies in Go is go mod, which is integrated into the Go toolchain itself. It handles the downloading, installing, and managing of packages and modules.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1702026392/png-transparent-golang-hd-logo.png",
+            "toolType": "Code scan"
+        },
+        {
+            "id": 2,
+            "name": "LLM Lobotomization3",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "route": "rust",
+            "extension": "rs",
+            "codeBlockName": "rust",
+            "codeBlockLanguage": "rust",
+            "disabled": true,
+            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1701347925/Property_1_3D_8.png",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.rust-armur-ai-audit",
+            "vsExtensionInfo": "Rust Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in cargo",
+            "packageInfo": "Rust uses cargo as its package manager. Cargo downloads Rust packages from crates.io, compiles them if necessary, and makes them available for your Rust programs.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1702026508/png-transparent-rust-system-programming-language-computer-programming-rusted-miscellaneous-computer-programming-bicycle-part.png"
+        },
+        {
+            "id": 3,
+            "name": "JailBreak Safe",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "route": "js",
+            "extension": "js",
+            "codeBlockName": "javascript",
+            "codeBlockLanguage": "javascript",
+            "disabled": true,
+            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1701347998/Property_1_3D_9.png",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.js-armur-ai-audit",
+            "vsExtensionInfo": "Javascript Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in NPM Dependency",
+            "packageInfo": "JavaScript primarily uses npm (Node Package Manager) for package management. Another popular package manager for JavaScript is yarn, which provides better performance and more predictable dependency resolution than npm.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1702025144/npm.png"
+        }
+    ],
+    "secOps": [
+        {
+            "id": 1,
+            "name": "A.I. Cloud Defender",
+            "route": "A.I. Cloud Defender",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "A.I. Cloud Defender",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 2,
+            "name": "Cloud trail logs",
+            "route": "Cloud trail logs",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Cloud trail logs",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 3,
+            "name": "dockerfile",
+            "route": "dockerfile",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "dockerfile",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 4,
+            "name": "Cloud watch logs",
+            "route": "Cloud watch logs",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Cloud watch logs",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 5,
+            "name": "Terraform file",
+            "route": "Terraform file",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Terraform file",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 6,
+            "name": "Ansible playbook auditor",
+            "route": "Ansible playbook auditor",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Ansible playbook auditor",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 7,
+            "name": "Kubernetes config file auditor",
+            "route": "Kubernetes config file auditor",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Kubernetes config file auditor",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 8,
+            "name": "Helm config file auditor",
+            "route": "Helm config file auditor",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Helm config file auditor",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 9,
+            "name": "Nginx file auditor",
+            "route": "Nginx file auditor",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Nginx file auditor",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        }
+    ],
+    "apiSecurity": [
+        {
+            "id": 1,
+            "name": "DAST",
+            "route": "DAST",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "DAST",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 2,
+            "name": "GraphQL sec",
+            "route": "GraphQL sec",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "GraphQL sec",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 3,
+            "name": "REST sec",
+            "route": "REST sec",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "REST sec",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 4,
+            "name": "gRPC Sec",
+            "route": "gRPC Sec",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "gRPC Sec",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        }
+    ],
+    "penTesting": [
+        {
+            "id": 1,
+            "name": "SQL injection",
+            "route": "SQL injection",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "SQL injection",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 2,
+            "name": "API pentest",
+            "route": "API pentest",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "API pentest",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 3,
+            "name": "Web app pentest",
+            "route": "Web app pentest",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Web app pentest",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 4,
+            "name": "AWS pentest",
+            "route": "AWS pentest",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "AWS pentest",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 5,
+            "name": "VAPT",
+            "route": "VAPT",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "VAPT",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 6,
+            "name": "CART tools",
+            "route": "CART tools",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "CART tools",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 7,
+            "name": "Attack surface management",
+            "route": "Attack surface management",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Attack surface management",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 8,
+            "name": "Dark web monitor",
+            "route": "Dark web monitor",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Dark web monitor",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        }
+    ],
+    "recon": [
+        {
+            "id": 1,
+            "name": "OSINT",
+            "route": "OSINT",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "OSINT",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 2,
+            "name": "Deep web scanner",
+            "route": "Deep web scanner",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Deep web scanner",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 3,
+            "name": "Threat intel",
+            "route": "Threat intel",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Threat intel",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 4,
+            "name": "Subdomain scanner",
+            "route": "Subdomain scanner",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Subdomain scanner",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 5,
+            "name": "Port scanner",
+            "route": "Port scanner",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Port scanner",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 6,
+            "name": "Offline copy",
+            "route": "Offline copy",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Offline copy",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 7,
+            "name": "Crawl spider",
+            "route": "Crawl spider",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Crawl spider",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        }
+    ],
+    "web3sec": [
+        {
+            "id": 1,
+            "name": "Ethereum recon",
+            "route": "Ethereum recon",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Ethereum recon",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 2,
+            "name": "MEV Attack bot",
+            "route": "MEV Attack bot",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "MEV Attack bot",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 3,
+            "name": "Front running bot",
+            "route": "Front running bot",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Front running bot",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 4,
+            "name": "Singature replay attack simulation",
+            "route": "Singature replay attack simulation",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Crawl spider",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 5,
+            "name": "Threat monitoring",
+            "route": "Threat monitoring",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Singature replay attack simulation",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        }
+    ],
+    "dbSecurity": [
+        {
+            "id": 1,
+            "name": "MongoDB",
+            "route": "MongoDB",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "MongoDB",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 2,
+            "name": "Postgres",
+            "route": "Postgres",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Postgres",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 3,
+            "name": "Cassandra",
+            "route": "Cassandra",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Cassandra",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 4,
+            "name": "Dynamodb",
+            "route": "Dynamodb",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Dynamodb",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        }
+    ],
+    "plugins": [
+        {
+            "id": 1,
+            "name": "Web Pentesting",
+            "route": "Web Pentesting",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Web Pentesting",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 2,
+            "name": "MEV Attack Bot",
+            "route": "Web Pentesting",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "MEV Attack Bot",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        },
+        {
+            "id": 3,
+            "name": "Threat Prediction, Modelling",
+            "route": "Threat Prediction, Modelling",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "/marketplace/sphere.svg",
+            "toolName": "Threat Prediction, Modelling",
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+        }
+    ],
+    "cliTools": [
+        {
+            "id": 1,
+            "name": "Subdomain Enumeration",
+            "description": "Audit Code",
+            "route": "Subdomain Enumeration",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png"
+        },
+        {
+            "id": 2,
+            "name": "Web Pentesting",
+            "description": "Audit Code",
+            "route": "Web Pentesting",
+            "disabled": true,
+            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png"
+        },
+        {
+            "id": 3,
+            "name": "API Pentesting",
+            "description": "Audit Code",
+            "route": "API Pentesting",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png"
+        },
+        {
+            "id": 4,
+            "name": "Cloud Trail Audit",
+            "description": "Audit Code",
+            "route": "Cloud Trail Audit",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png"
+        },
+        {
+            "id": 5,
+            "name": "Recon/Bug Bounty",
+            "description": "Audit Code",
+            "route": "Recon/Bug Bounty",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png"
+        }
+    ],
+    "cloudSecurity": [
+        {
+            "id": 1,
+            "name": "Cloudtrail Audit",
+            "description": "Security Audit",
+            "route": "Cloudtrail Audit",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png"
+        },
+        {
+            "id": 2,
+            "name": "AWS Pentest",
+            "description": "Security Audit",
+            "route": "AWS Pentest",
+            "extension": "python",
+            "disabled": true,
+            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png"
+        }
+    ]
+}

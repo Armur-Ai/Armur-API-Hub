@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Select } from "antd";
@@ -8,9 +8,30 @@ import TOOLS from "../marketplace/data.json";
 import { CloseOutlined } from "@ant-design/icons";
 import MarketplaceCard from "../marketplace/marketplaceCard";
 import "../marketplace/marketplace.scss";
+import TOOLS_DATA from "../marketplace/securityTools.json";
 
 const MarketplaceComponentDetails = () => {
   const [selectedFilter, setSelectedFilter] = useState<string[]>([]);
+  const [allTools, setAllTools] = useState<string[]>([]);
+
+
+
+  useEffect(() => {
+    try {
+      const storedTool = localStorage.getItem("selectedTool");
+      if (storedTool) {
+      let  selectedTool = JSON.parse(storedTool);
+      const TOOLSDATA: any = TOOLS_DATA;
+      
+        console.log("selectedTool",TOOLSDATA[selectedTool])
+        setAllTools(TOOLSDATA[selectedTool])
+        
+      }
+    } catch (error) {
+      console.error("Error parsing selectedTool:", error);
+    }
+
+  },[])
 
   const options = [
     { label: "Web3 Auditing tools (6)", value: "Web3 Auditing tools" },
@@ -100,7 +121,7 @@ const MarketplaceComponentDetails = () => {
                                         CARDS
       ============================================================================================*/}
       <div className="flex gap-10 py-12 flex-wrap">
-        {Object?.values(TOOLS)[2]?.map((data: any, key: number) => (
+        {Object?.values(allTools).map((data: any, key: number) => (
           <Link href={"/marketplace-details"} key={key}>
             <MarketplaceCard
               {...{

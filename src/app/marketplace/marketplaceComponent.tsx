@@ -1,15 +1,33 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from 'next/navigation'
 import { Input } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import TOOLS from "./data.json";
+import TOOLSDATA from "./securityTools.json";
 import MarketplaceDiscoverToolsSlider from "./marketplaceDiscoverToolsSlider";
 import MarketplacePopularToolsSlider from "./marketplacePopularToolsSlider";
 import MarketplaceRecommendedToolsSlider from "./marketplaceRecommendedToolsSlider";
 import "./marketplace.scss";
 
+
 const MarketplaceComponent = () => {
+  const router = useRouter();
+
+
+
+  const navigateHandler = (toolType: string,TOOLSDATA:any) => {
+    localStorage.setItem("selectedTool", JSON.stringify(toolType));
+    
+     router.push('/marketplace-tools');
+  
+    // const selectedTool  = TOOLSDATA[toolType]
+    // console.log("selectedTool",selectedTool)
+    // console.log("selectedTool",selectedTool)
+    // router.push('/marketplace-tools');
+  }
+
   //--------------------------------------------------------------------
   //                       TITLE_WITH_PARA
   //--------------------------------------------------------------------
@@ -70,8 +88,8 @@ const MarketplaceComponent = () => {
       <div className="md:grid hidden xl:grid-cols-4 lg:grid-cols-3  grid-cols-2 mt-10 gap-[3rem]">
         {Object?.values(TOOLS)[0]?.map((data: any, key: number) => (
           <div key={key} className="discover-card ">
-            <Link href={"/marketplace-tools"}>
-              <div className="w-full h-[8.3rem] relative">
+            {/* <Link href={"/marketplace-tools"}> */}
+              <div onClick={() =>navigateHandler(data.toolType,TOOLSDATA)} className="hover:cursor-pointer w-full h-[8.3rem] relative">
                 <div className="w-full h-full absolute left-0 top-0">
                   <Image
                     src={data?.imageUrl}
@@ -87,7 +105,7 @@ const MarketplaceComponent = () => {
                   {data.name}
                 </h4>
               </div>
-            </Link>
+            {/* </Link> */}
           </div>
         ))}
       </div>
