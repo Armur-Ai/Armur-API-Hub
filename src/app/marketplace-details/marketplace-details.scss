@@ -162,3 +162,8 @@
 .ant-message-notice-content {
   z-index: 9999999999999999999 !important;
 }
+
+.ant-message {
+  top: 50% !important; /* Adjust the top position as needed */
+  right: 50% !important; /* Adjust the right position as needed */
+}
