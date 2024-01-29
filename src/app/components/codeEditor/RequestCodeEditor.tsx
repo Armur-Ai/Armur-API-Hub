@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { CopyBlock, anOldHope } from "react-code-blocks";
 import { codeSamples } from "./codeBlocks";
 
@@ -9,6 +9,20 @@ const RequestCodeEditor = () => {
     Object.values(codeSamples)[5]
   );
   const [lineNumbers, toggleLineNumbers] = useState(false);
+
+  useEffect(() => {
+    try {
+      const storedTool = localStorage.getItem("selectedTool");
+      if (storedTool) {
+        let selectedTool = JSON.parse(storedTool);
+        const codeBlocksData: any = codeSamples;
+        changeLanguage(selectedTool.codeBlockLanguage);
+        changeDemo(codeBlocksData[selectedTool.codeBlockName]);
+      }
+    } catch (error) {
+      console.error("Error parsing selectedTool:", error);
+    }
+  }, []);
 
   return (
     <div className="codeTab-block">

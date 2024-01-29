@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { CopyBlock, anOldHope } from "react-code-blocks";
 import { codeSamples } from "./codeBlocks";
 import isEmpty from "@/isEmpty";
+import "./codeEditor.scss"
 
 const ResultCodeEditor = () => {
   // const [language, changeLanguage] = useState("javascript");
@@ -45,8 +46,8 @@ const ResultCodeEditor = () => {
     "<div><!DOCTYPE html>\n<html>\n<head>\n<title>List of Bugs and Vulnerabilities</title>\n</head>\n<body>\n\n<h1>List of Bugs and Vulnerabilities</h1>\n\n<ul>\n  <li><strong>Vulnerability: Reentrancy Attack</strong><br>\n  The code is susceptible to a reentrancy attack because it performs external calls before updating the state variable balances. This can allow an attacker to repeatedly call the transfer function and drain the contract's balance.</li>\n\n  <li><strong>Insufficient Balance Check</strong><br>\n  The code does not perform a thorough check for the sender's balance before proceeding with the transfer. It only checks if the balance is greater than or equal to the specified amount, which can lead to unexpected behavior if an account has a negative balance.</li>\n\n  <li><strong>Artificial State Change</strong><br>\n  The for loop in the transfer function artificially induces multiple state changes by adding and subtracting 1</div>";
 
   return (
-    <div className="codeTab-block">
-      <div className="h-full custom-border p-3">
+    <div className="result-container codeTab-block">
+      <div className="h-full custom-border p-5">
         {/* <CopyBlock
           language={language}
           text={languageDemo}
@@ -57,7 +58,7 @@ const ResultCodeEditor = () => {
           customStyle={{ height: "100%;" }}
         /> */}
         <div
-          className="text-base h-[100%] py-1 font-normal text-md text-green-500"
+          className=" text-base h-[100%] py-1 font-normal text-md text-green-500"
           dangerouslySetInnerHTML={{
             __html: isEmpty(finalValue) ? dummyResult : finalValue,
           }}

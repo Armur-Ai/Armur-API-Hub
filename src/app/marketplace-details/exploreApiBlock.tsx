@@ -4,8 +4,9 @@ import React from "react";
 import { Collapse } from "antd";
 import { InfoCircleOutlined } from "@ant-design/icons";
 import "./marketplace-details.scss";
-
+import isEmpty from "../../isEmpty";
 const ExploreApiBlock = (props: any) => {
+  const {setSelectedApi,selectedApi} = props
   const { Panel } = Collapse;
   const apiList = [
     {
@@ -56,6 +57,11 @@ const ExploreApiBlock = (props: any) => {
     },
   ];
 
+  const selectApiHandler = (apiData:any) => {
+    console.log("apiData",apiData)
+    setSelectedApi(apiData);
+  }
+
   const getHeader = (headerText: string) => (
     <div
       className={`flex justify-between items-center w-full text-white font-michroma`}
@@ -82,7 +88,7 @@ const ExploreApiBlock = (props: any) => {
             >
               <div className="flex flex-col gap-3">
                 {data?.apis?.map((apiData: any, key: number) => (
-                  <div className="flex gap-1 text-sm" key={key}>
+                  <div onClick={() =>selectApiHandler(data)} className="hover:cursor-pointer flex gap-1 text-sm" key={key}>
                     <span
                       className={`text-sm font-orbitron font-medium ${
                         apiData?.mode?.toUpperCase() === "GET"
@@ -93,7 +99,7 @@ const ExploreApiBlock = (props: any) => {
                       {apiData.mode}
                     </span>
 
-                    <span className="font-michroma text-[#AFAFAFAB]">
+                    <span className={!isEmpty(selectedApi) && selectedApi.apis[0].api == apiData.api ? "font-michroma text-[#ffffff]" : "font-michroma text-[#AFAFAFAB]"}>
                       {apiData.api}
                     </span>
                   </div>

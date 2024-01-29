@@ -13,9 +13,9 @@ import isEmpty from "../../isEmpty";
 // import { RootState } from '../../store/store';
 
 const MarketplaceComponentDetails = () => {
-  const [selectedFilter, setSelectedFilter] = useState<string[]>([]);
+  const [selectedFilter, setSelectedFilter] = useState<any[]>([]);
   const [allTools, setAllTools] = useState<string[]>([]);
-  const [selectedDefaultOption, selectedToolType] = useState<string[]>([]);
+  const [selectedDefaultOption, selectedToolType] = useState<any>({});
  
 
   // const value = useSelector((state: RootState) => state.demo.value);
@@ -89,10 +89,12 @@ const MarketplaceComponentDetails = () => {
 
   const handleChange = (e: string,value:any) => {
     console.log("before object", selectedFilter.indexOf(e));
-    // console.log("value",value) 
+    console.log("value",value) 
    console.log("toolPresent",selectedFilter.includes(value))
-   console.log(selectedFilter)
-    if (selectedFilter.indexOf(e) === -1) {
+ 
+   let filteredArray = selectedFilter.filter(ele => ele.value === value.value)
+     console.log("filteredArray",filteredArray)
+    if (selectedFilter.indexOf(e) === -1 && isEmpty(filteredArray)) {
       setSelectedFilter(() => {
         const temp = selectedFilter;
         temp.push(value);

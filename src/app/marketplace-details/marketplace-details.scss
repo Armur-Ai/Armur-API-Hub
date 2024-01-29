@@ -1,100 +1,164 @@
 @import "../function.scss";
 
 .ant-collapse {
-    background-color: transparent !important;
-    border: 0px !important;
+  background-color: transparent !important;
+  border: 0px !important;
 }
 .ant-collapse-expand-icon {
-    color: white;
+  color: white;
 }
 .ant-collapse-content {
-    background-color: transparent !important;
-    border: 0 !important;
+  background-color: transparent !important;
+  border: 0 !important;
 }
 .ant-collapse-content-box {
-    padding-left: 2.5rem !important;
+  padding-left: 2.5rem !important;
 }
 .ant-collapse-item {
-    border-bottom: 1px solid #79797b80 !important;
-    border-radius: 0 !important;
+  border-bottom: 1px solid #79797b80 !important;
+  border-radius: 0 !important;
 }
 
 .custom-border--explore-api {
-    @apply rounded-tl-lg rounded-bl-lg;
-    // .custom-border {
-    &::after {
-        background: radial-gradient(21.19% 40.1% at 100.03% 0%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%),
-            radial-gradient(98% 49.86% at 100.03% 100%, #8c33a3 0%, rgba(51, 163, 109, 0.05) 100%),
-            linear-gradient(108.04deg, rgba(255, 255, 255, 0.04) 71.16%, rgba(255, 255, 255, 0) 98.84%),
-            radial-gradient(24.21% 39.21% at 0% 0%, rgba(255, 255, 255, 0.81) 0%, rgba(255, 255, 255, 0.19) 100%);
-        // }
-    }
+  @apply rounded-tl-lg rounded-bl-lg;
+  // .custom-border {
+  &::after {
+    background: radial-gradient(
+        21.19% 40.1% at 100.03% 0%,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      radial-gradient(
+        98% 49.86% at 100.03% 100%,
+        #8c33a3 0%,
+        rgba(51, 163, 109, 0.05) 100%
+      ),
+      linear-gradient(
+        108.04deg,
+        rgba(255, 255, 255, 0.04) 71.16%,
+        rgba(255, 255, 255, 0) 98.84%
+      ),
+      radial-gradient(
+        24.21% 39.21% at 0% 0%,
+        rgba(255, 255, 255, 0.81) 0%,
+        rgba(255, 255, 255, 0.19) 100%
+      );
+    // }
+  }
 }
 .custom-border--testApi-block {
-    @apply rounded-br-lg;
+  @apply rounded-br-lg;
 
-    &::after {
-        background: radial-gradient(21.19% 40.1% at 100.03% 0%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%),
-            radial-gradient(98% 49.86% at 100.03% 100%, #8c33a3 0%, rgba(51, 163, 109, 0.05) 100%),
-            linear-gradient(108.04deg, rgba(255, 255, 255, 0.04) 71.16%, rgba(255, 255, 255, 0) 98.84%),
-            radial-gradient(24.21% 39.21% at 0% 0%, rgba(255, 255, 255, 0.81) 0%, rgba(255, 255, 255, 0.19) 100%);
-    }
+  &::after {
+    background: radial-gradient(
+        21.19% 40.1% at 100.03% 0%,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      radial-gradient(
+        98% 49.86% at 100.03% 100%,
+        #8c33a3 0%,
+        rgba(51, 163, 109, 0.05) 100%
+      ),
+      linear-gradient(
+        108.04deg,
+        rgba(255, 255, 255, 0.04) 71.16%,
+        rgba(255, 255, 255, 0) 98.84%
+      ),
+      radial-gradient(
+        24.21% 39.21% at 0% 0%,
+        rgba(255, 255, 255, 0.81) 0%,
+        rgba(255, 255, 255, 0.19) 100%
+      );
+  }
 }
 .codeTab-block {
-    @apply rounded;
+  @apply rounded;
 
-    .custom-border {
-        &::after {
-            background: radial-gradient(21.19% 40.1% at 100.03% 0%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%),
-                radial-gradient(98% 49.86% at 100.03% 100%, #8c33a3 0%, rgba(51, 163, 109, 0.05) 100%),
-                radial-gradient(24.21% 39.21% at 0% 0%, rgba(255, 255, 255, 0.81) 0%, rgba(255, 255, 255, 0.19) 100%);
-        }
+  .custom-border {
+    &::after {
+      background: radial-gradient(
+          21.19% 40.1% at 100.03% 0%,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        radial-gradient(
+          98% 49.86% at 100.03% 100%,
+          #8c33a3 0%,
+          rgba(51, 163, 109, 0.05) 100%
+        ),
+        radial-gradient(
+          24.21% 39.21% at 0% 0%,
+          rgba(255, 255, 255, 0.81) 0%,
+          rgba(255, 255, 255, 0.19) 100%
+        );
     }
+  }
 }
 .test-btn {
-    background: linear-gradient(106.66deg, rgba(255, 255, 255, 0.2) 38.49%, rgba(255, 255, 255, 0) 182.75%);
-    padding: 0.25rem 0.6rem !important;
+  background: linear-gradient(
+    106.66deg,
+    rgba(255, 255, 255, 0.2) 38.49%,
+    rgba(255, 255, 255, 0) 182.75%
+  );
+  padding: 0.25rem 0.6rem !important;
 
-    @apply hover:text-white #{!important};
+  @apply hover:text-white #{!important};
 }
 .testapicollapse {
-    .ant-collapse-header {
-        padding-bottom: 0 !important;
-    }
-    .ant-collapse-content-box {
-        padding: 8px 16px !important;
-    }
+  .ant-collapse-header {
+    padding-bottom: 0 !important;
+  }
+  .ant-collapse-content-box {
+    padding: 8px 16px !important;
+  }
 }
 
 .extension-card {
-    @apply rounded-2xl;
-    &::after {
-        @apply -m-0.5 #{!important};
-        background: linear-gradient(
-                94.37deg,
-                rgba(0, 0, 0, 0.4) -59.55%,
-                rgba(0, 0, 0, 0.5) 19.43%,
-                rgba(255, 255, 255, 0) 107.87%
-            ),
-            radial-gradient(51.16% 72.97% at 52.22% 136.24%, #e065ff 0%, rgba(224, 102, 255, 0.05) 100%),
-            radial-gradient(11.06% 58.68% at 52.22% -10.09%, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
-            radial-gradient(12.64% 57.38% at 0% -10.09%, #ffffff 0%, rgba(255, 255, 255, 0.19) 100%);
-    }
+  @apply rounded-2xl;
+  &::after {
+    @apply -m-0.5 #{!important};
+    background: linear-gradient(
+        94.37deg,
+        rgba(0, 0, 0, 0.4) -59.55%,
+        rgba(0, 0, 0, 0.5) 19.43%,
+        rgba(255, 255, 255, 0) 107.87%
+      ),
+      radial-gradient(
+        51.16% 72.97% at 52.22% 136.24%,
+        #e065ff 0%,
+        rgba(224, 102, 255, 0.05) 100%
+      ),
+      radial-gradient(
+        11.06% 58.68% at 52.22% -10.09%,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      radial-gradient(
+        12.64% 57.38% at 0% -10.09%,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0.19) 100%
+      );
+  }
 }
 .tokenInput {
-    .bg-image {
-        display: none;
-    }
-    background: #ffffff1f !important;
-    @apply rounded;
-    .ant-input,
-    .ant-input-number-input {
-        @apply h-[2.5rem] py-1 px-5 text-white;
-    }
+  .bg-image {
+    display: none;
+  }
+  background: #ffffff1f !important;
+  @apply rounded;
+  .ant-input,
+  .ant-input-number-input {
+    @apply h-[2.5rem] py-1 px-5 text-white;
+  }
 }
 .ant-slider-rail {
-    background-color: #ffffff1f !important;
+  background-color: #ffffff1f !important;
 }
 .ant-slider-track {
-    background-color: #307ff4 !important;
+  background-color: #307ff4 !important;
+}
+
+.ant-message-notice-content {
+  z-index: 9999999999999999999 !important;
 }

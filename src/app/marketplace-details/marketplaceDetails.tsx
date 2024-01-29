@@ -12,6 +12,16 @@ import isEmpty from "../../isEmpty";
 
 const MarketplaceDetails = () => {
   const [toolData, setToolData] = useState<any>({});
+  const [selectedApi,setSelectedApi] =  useState<any>( {
+    name: "Optimization",
+    apis: [
+      {
+        mode: "POST",
+        api: "/apiaudit/audit/create?data=Optimization",
+      },
+     
+    ],
+  },);
 
   useEffect(() => {
     try {
@@ -38,7 +48,7 @@ const MarketplaceDetails = () => {
     }
   }, []);
 
-  console.log("toolData", toolData);
+  console.log("selectedApi", selectedApi);
   return (
     <div className=" px-16 pt-10 marketplacedetails ">
       {/* header */}
@@ -92,12 +102,12 @@ const MarketplaceDetails = () => {
       {/* Detailed Block */}
       <div className="flex pt-3 items-stretch">
         <div className="w-3/12 custom-border custom-border--explore-api">
-          <ExploreApiBlock />
+          <ExploreApiBlock setSelectedApi={setSelectedApi} selectedApi={selectedApi}/>
         </div>
-        <div className="w-6/12 custom-border custom-border--testApi-block">
-          <TestApiBlock />
+        <div className="w-5/12 custom-border custom-border--testApi-block">
+          <TestApiBlock selectedApi={selectedApi}/>
         </div>
-        <div className="w-3/12 h-full pl-5">
+        <div className="w-4/12 h-full pl-5">
           <CodeTabBlock />
         </div>
       </div>

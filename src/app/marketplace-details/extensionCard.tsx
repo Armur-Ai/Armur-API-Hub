@@ -1,4 +1,4 @@
-import { Button } from "antd";
+import { Button,message } from "antd";
 import Image from "next/image";
 import React from "react";
 import "./marketplace-details.scss";
@@ -16,7 +16,8 @@ const ExtensionCard = (props: extensionCardProps) => {
   const { iconUrl, heading, description, url, width, height } = props;
 
   const handleOpenLink = () => {
-    window.open(url, '_blank');
+     message.success(`Github App will be coming soon`);
+    // window.open(url, '_blank');
   };
 
   return (

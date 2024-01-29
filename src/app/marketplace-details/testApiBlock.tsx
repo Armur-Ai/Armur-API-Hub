@@ -9,7 +9,8 @@ import SelectFiled from "../components/common/selectField";
 import { useForm } from "react-hook-form";
 import InputField from "../components/common/inputField";
 
-const TestApiBlock = () => {
+const TestApiBlock = (props:any) => {
+  const {selectedApi} = props
   const { Panel } = Collapse;
   const [temperatureValue, setTemperatureValue] = useState(1);
 
@@ -65,11 +66,11 @@ const TestApiBlock = () => {
       <div className="flex justify-between items-center">
         <h3 className="text-base tracking-wide font-michroma">
           <span className="text-[#23C778] font-medium uppercase font-orbitron">
-            GET{" "}
-          </span>
-          Test test 123
+          {selectedApi?.apis[0].mode} - {selectedApi?.name} 
+          </span><br/>
+          {selectedApi?.apis[0].api}
         </h3>
-        <Link href={"/"}>
+        <Link href={"https://app.armur.ai/signUp"}>
           <Button className="flex items-center text-white test-btn border-0 text-base tracking-wider font-michroma">
             <div className=" w-4 h-7 relative mr-1">
               <div className="w-full h-full absolute left-0 top-0">
@@ -127,13 +128,13 @@ const TestApiBlock = () => {
                               placeholder: "test",
                               defaultValue: "Test test 1",
                               options: [
-                                { label: "Test test 1", value: "Test test 1" },
-                                { label: "Test test 2", value: "Test test 2" },
-                                { label: "Test test 3", value: "Test test 3" },
-                                {
-                                  label: "+ Add new app",
-                                  value: "+ Add new app",
-                                },
+                                { label: "testsd-37149e12cdfa8815f6c6604f952be2821140d5cc4a21af33dd748bd750cdce80", value: "testsd-37149e12cdfa8815f6c6604f952be2821140d5cc4a21af33dd748bd750cdce80" },
+                                { label: "testsd-70996661a3cec576a4cdca8fbe1e4d5f33d8206ed8cc846f9de1e476bed2a7e2", value: "testsd-70996661a3cec576a4cdca8fbe1e4d5f33d8206ed8cc846f9de1e476bed2a7e2" },
+                                { label: "testsd-70996661a3cec576a4cdca8fbe1e4d5f33d8206ed8cc846f9de1e476bed2a7e2", value: "testsd-70996661a3cec576a4cdca8fbe1e4d5f33d8206ed8cc846f9de1e476bed2a7e2" },
+                                // {
+                                //   label: "+ Add new app",
+                                //   value: "+ Add new app",
+                                // },
                               ],
                             }}
                           />

@@ -163,3 +163,39 @@
         @apply bg-[#4628ff] rounded;
     }
 }
+
+
+.result-container {
+    pre {
+      background: #19114680;
+      padding: 10px;
+      width: fit-content;
+      margin: 10px;
+    }
+    h1 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 14px;
+      font-weight: medium;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 14px;
+      font-weight: medium;
+      margin-bottom: 10px;
+    }
+    li {
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 10px;
+      list-style-type: decimal;
+    }
+    p {
+      font-size: 12px;
+      font-weight: medium;
+      margin-bottom: 10px;
+    }
+  }
