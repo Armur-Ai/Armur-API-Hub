@@ -8,8 +8,23 @@ import TestApiBlock from "./testApiBlock";
 import CodeTabBlock from "./codeTabBlock";
 import ExtensionCard from "./extensionCard";
 import AdvanceApiCodeEditor from "../components/codeEditor/advanceApiCodeEditor";
+import isEmpty from "../../isEmpty";
 
 const MarketplaceDetails = () => {
+  const [toolData, setToolData] = useState<any[]>([]);
+
+  useEffect(() => {
+    try {
+      const storedTool = localStorage.getItem("selectedTool");
+      if (storedTool) {
+        let selectedTool = JSON.parse(storedTool);
+        setToolData(selectedTool);
+      }
+    } catch (error) {
+      console.error("Error parsing selectedTool:", error);
+    }
+  }, []);
+
   React.useEffect(() => {
     if (document.body.clientWidth < 1300) {
       const viewport: any = document.querySelector("meta[name=viewport]");
@@ -23,6 +38,7 @@ const MarketplaceDetails = () => {
     }
   }, []);
 
+  console.log("toolData", toolData);
   return (
     <div className=" px-16 pt-10 marketplacedetails ">
       {/* header */}
@@ -44,12 +60,12 @@ const MarketplaceDetails = () => {
           </div>
           <div>
             <h2 className="text-[2.5rem] font-semibold leading-[3.1rem]">
-              GO Security Scan
+              {toolData.name}
             </h2>
             <p
               className={`font-michroma text-base text-[rgba(255,255,255,0.6)]`}
             >
-              Security Checker
+              {toolData.description}
             </p>
             <p
               className={`font-michroma text-base text-[rgba(255,255,255,0.6)]`}
@@ -86,30 +102,32 @@ const MarketplaceDetails = () => {
         </div>
       </div>
       {/* Extension Block */}
-      <div className="mt-8 flex gap-10">
-        <ExtensionCard
-          {...{
-            iconUrl: "/icons/vs-code.svg",
-            heading: "VScode Extension",
-            description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum ut odio sit amet ",
-            url: "/",
-            width: 59,
-            height: 55,
-          }}
-        />
-        <ExtensionCard
-          {...{
-            iconUrl: "/icons/npm.svg",
-            heading: "NPM Dependency",
-            description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutrum ut odio sit amet ",
-            url: "/",
-            width: 67,
-            height: 26,
-          }}
-        />
-      </div>
+
+      {!isEmpty(toolData) && (
+        <div className="mt-8 flex gap-10">
+          <ExtensionCard
+            {...{
+              iconUrl: "/icons/vs-code.svg",
+              heading: "VScode Extension",
+              description: toolData.vsExtensionInfo,
+              url: toolData.vsExtensionUrl,
+              width: 59,
+              height: 55,
+            }}
+          />
+          <ExtensionCard
+            {...{
+              iconUrl: "/icons/github.png",
+              heading: "Github App",
+              description: toolData.packageInfo,
+              url: toolData.vsExtensionUrl,
+              width: 67,
+              height: 26,
+            }}
+          />
+        </div>
+      )}
+
       {/* Advanced API Usage */}
       <div className="flex gap-3 mt-5">
         <Image
@@ -121,8 +139,7 @@ const MarketplaceDetails = () => {
         <div className="flex flex-col gap-2">
           <h3 className="text-2xl font-bold">Advanced API Usage</h3>
           <p className="text-[#FFFFFFB2] font-michroma text-base tracking-wider">
-            You can also build your own tooling by using this API. Below are the
-            docs for the API -
+          You can also build your own tooling by using this API. Below are the docs for the API -
           </p>
         </div>
       </div>

@@ -76,16 +76,17 @@ const MarketplacePopularToolsSlider = () => {
     <div className="pt-9 pb-12 relative md:px-0 px-6">
       <Slider {...popularSettings}>
         {Object?.values(popularTools)?.map((data: any, key: number) => (
-          <Link href={"/marketplace-details"} key={key}>
+          // <Link href={"/marketplace-details"} key={key}>
             <MarketplaceCard
               {...{
                 toolName: data?.toolName,
                 description: data?.description,
                 imageUrl: data?.imageUrl,
                 name: data?.toolName,
+                data:data
               }}
             />
-          </Link>
+          // </Link>
         ))}
         {/* <div className="flex justify-end items-end">
       <button>Prev</button>

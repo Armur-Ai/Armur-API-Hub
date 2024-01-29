@@ -14,12 +14,36 @@ const chainOptions = [
 ];
 
 const AdvanceApiCodeEditor = () => {
-  const [language, changeLanguage] = useState("python");
+  const codeBlocksData: any = codeSamples;
+  const [language, changeLanguage] = useState<any>("python");
   const [languageDemo, changeDemo] = useState<any>(
-    Object.values(codeSamples)[5]
+    codeBlocksData[language]
   );
   const [lineNumbers, toggleLineNumbers] = useState(false);
   const [selectedTheme, setSelectedTheme] = useState("dark");
+
+
+
+  useEffect(() => {
+
+    try {
+      const storedTool = localStorage.getItem("selectedTool");
+      if (storedTool) {
+        let  selectedTool = JSON.parse(storedTool);
+        const codeBlocksData: any = codeSamples;
+    //     changeLanguage(selectedTool.codeBlockLanguage)
+    // changeDemo(codeBlocksData[selectedTool.codeBlockName])
+    
+        
+      }
+    } catch (error) {
+      console.error("Error parsing selectedTool:", error);
+    }
+   
+    
+     
+  
+    },[])
 
   //   useEffect(() => {
   //     var elements = document.getElementsByClassName("code-block-container-two");
@@ -67,8 +91,9 @@ const AdvanceApiCodeEditor = () => {
   // };
 
   const onTabClickHandler = (data: any) => {
+    const codeBlocksData: any = codeSamples;
     changeLanguage(data.value);
-    // changeDemo(codeSamples[data.value]);
+    changeDemo(codeBlocksData[data.value]);
   };
 
   const themeChangeHadnler = async (label: any) => {

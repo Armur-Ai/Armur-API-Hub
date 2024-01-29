@@ -70,20 +70,22 @@ const MarketplaceRecommendedToolsSlider = () => {
       },
     ],
   };
+  
   return (
     <div className="pt-9 pb-12 relative md:px-0 px-6">
       <Slider {...recommendedSettings}>
         {Object?.values(recommandedTools)?.map((data: any, key: number) => (
-          <Link href={"/marketplace-details"} key={key}>
+          // <Link href={"/marketplace-details"} key={key}>
             <MarketplaceCard
               {...{
                 toolName: data?.toolName,
                 description: data?.description,
                 imageUrl: data?.imageUrl,
                 name: data?.toolName,
+                data:data
               }}
             />
-          </Link>
+          // </Link>
         ))}
       </Slider>
     </div>

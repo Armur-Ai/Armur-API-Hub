@@ -15,6 +15,10 @@ interface extensionCardProps {
 const ExtensionCard = (props: extensionCardProps) => {
   const { iconUrl, heading, description, url, width, height } = props;
 
+  const handleOpenLink = () => {
+    window.open(url, '_blank');
+  };
+
   return (
     <div className="flex w-3/6 gap-4 relative px-4 py-5 items-start justify-between custom-border extension-card">
       {/* <div className=" absolute w-full h-full left-0 top-0">
@@ -36,8 +40,8 @@ const ExtensionCard = (props: extensionCardProps) => {
         </p>
       </div>
       <div className=" self-end">
-        <Link href={url}>
-          <Button className="flex items-center text-white test-btn border-0 text-base tracking-wider font-michroma">
+        {/* <Link href={url}> */}
+          <Button onClick={handleOpenLink} className="flex items-center text-white test-btn border-0 text-base tracking-wider font-michroma">
             <div className=" w-4 h-7 relative mr-1">
               <div className="w-full h-full absolute left-0 top-0">
                 <Image
@@ -49,7 +53,7 @@ const ExtensionCard = (props: extensionCardProps) => {
             </div>
             Try now
           </Button>
-        </Link>
+        {/* </Link> */}
       </div>
     </div>
   );

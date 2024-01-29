@@ -18,7 +18,7 @@ const MarketplaceComponent = () => {
 
 
   const navigateHandler = (toolType: string,TOOLSDATA:any) => {
-    localStorage.setItem("selectedTool", JSON.stringify(toolType));
+    localStorage.setItem("selectedToolType", JSON.stringify(toolType));
     
      router.push('/marketplace-tools');
   

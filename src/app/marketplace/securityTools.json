@@ -233,7 +233,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "A.I. Cloud Defender",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 2,
@@ -243,7 +251,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "Cloud trail logs",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 3,
@@ -253,7 +269,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "dockerfile",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 4,
@@ -263,7 +287,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "Cloud watch logs",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 5,
@@ -273,7 +305,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "Terraform file",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 6,
@@ -283,7 +323,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "Ansible playbook auditor",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 7,
@@ -293,7 +341,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "Kubernetes config file auditor",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 8,
@@ -303,7 +359,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "Helm config file auditor",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 9,
@@ -313,7 +377,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "Nginx file auditor",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         }
     ],
     "apiSecurity": [
@@ -325,7 +397,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "DAST",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 2,
@@ -334,7 +414,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "GraphQL sec",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 3,
@@ -344,7 +432,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "REST sec",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 4,
@@ -354,7 +450,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "gRPC Sec",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         }
     ],
     "penTesting": [
@@ -366,7 +470,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "SQL injection",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 2,
@@ -376,7 +488,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "API pentest",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 3,
@@ -386,7 +506,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "Web app pentest",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 4,
@@ -396,7 +524,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "AWS pentest",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 5,
@@ -406,7 +542,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "VAPT",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 6,
@@ -416,7 +560,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "CART tools",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 7,
@@ -426,7 +578,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "Attack surface management",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 8,
@@ -436,7 +596,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "Dark web monitor",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         }
     ],
     "recon": [
@@ -448,7 +616,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "OSINT",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 2,
@@ -458,7 +634,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "Deep web scanner",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 3,
@@ -468,7 +652,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "Threat intel",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 4,
@@ -478,7 +670,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "Subdomain scanner",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 5,
@@ -488,7 +688,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "Port scanner",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 6,
@@ -498,7 +706,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "Offline copy",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 7,
@@ -507,8 +723,15 @@
             "extension": "python",
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
-            "toolName": "Crawl spider",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         }
     ],
     "web3sec": [
@@ -519,8 +742,15 @@
             "extension": "python",
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
-            "toolName": "Ethereum recon",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 2,
@@ -529,8 +759,15 @@
             "extension": "python",
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
-            "toolName": "MEV Attack bot",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 3,
@@ -539,8 +776,15 @@
             "extension": "python",
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
-            "toolName": "Front running bot",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 4,
@@ -549,8 +793,15 @@
             "extension": "python",
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
-            "toolName": "Crawl spider",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 5,
@@ -559,8 +810,15 @@
             "extension": "python",
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
-            "toolName": "Singature replay attack simulation",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         }
     ],
     "dbSecurity": [
@@ -571,8 +829,15 @@
             "extension": "python",
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
-            "toolName": "MongoDB",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 2,
@@ -581,8 +846,15 @@
             "extension": "python",
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
-            "toolName": "Postgres",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 3,
@@ -591,8 +863,15 @@
             "extension": "python",
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
-            "toolName": "Cassandra",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 4,
@@ -601,8 +880,15 @@
             "extension": "python",
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
-            "toolName": "Dynamodb",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         }
     ],
     "plugins": [
@@ -614,7 +900,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "Web Pentesting",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 2,
@@ -624,7 +918,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "MEV Attack Bot",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 3,
@@ -634,7 +936,15 @@
             "disabled": true,
             "imageUrl": "/marketplace/sphere.svg",
             "toolName": "Threat Prediction, Modelling",
-            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain"
+            "description": "Check for security issues in your solidity smart contract before you deploy to an EVM chain",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         }
     ],
     "cliTools": [
@@ -645,7 +955,15 @@
             "route": "Subdomain Enumeration",
             "extension": "python",
             "disabled": true,
-            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png"
+            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 2,
@@ -653,7 +971,15 @@
             "description": "Audit Code",
             "route": "Web Pentesting",
             "disabled": true,
-            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png"
+            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 3,
@@ -662,7 +988,15 @@
             "route": "API Pentesting",
             "extension": "python",
             "disabled": true,
-            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png"
+            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 4,
@@ -680,7 +1014,15 @@
             "route": "Recon/Bug Bounty",
             "extension": "python",
             "disabled": true,
-            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png"
+            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         }
     ],
     "cloudSecurity": [
@@ -691,7 +1033,15 @@
             "route": "Cloudtrail Audit",
             "extension": "python",
             "disabled": true,
-            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png"
+            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         },
         {
             "id": 2,
@@ -700,7 +1050,15 @@
             "route": "AWS Pentest",
             "extension": "python",
             "disabled": true,
-            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png"
+            "imageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1700030386/Icon_16.png",
+            "vsExtensionUrl": "https://marketplace.visualstudio.com/items?itemName=ArmurAI.py-armur-ai-audit",
+            "vsExtensionInfo": "Python Audit by Armur AI is a powerful Visual Studio Code extension that allows you to perform comprehensive code audits right from your favorite code editor. It provides insights into various aspects of your codebase, including Code Vulnerabilities, Code Documentation, Bugs, Optimization techniques, and much more.",
+            "packageName": "Use it in Github",
+            "packageInfo": "This tool is available via our github app that will scan your entire repo for relevant files and create a vulnerability scan report for you and also raise a pull request that you can merge.",
+            "packageImageUrl": "https://res.cloudinary.com/myrltech/image/upload/v1705485977/github.png",
+            "toolType": "Code scan",
+            "toolName": "Python Code Audit",
+            "tabKey": "2"
         }
     ]
 }

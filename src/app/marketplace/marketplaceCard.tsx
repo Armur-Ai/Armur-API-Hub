@@ -1,19 +1,36 @@
 import { CheckOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import React from "react";
+import { useRouter } from 'next/navigation'
 
 interface marketplaceCardProps {
   toolName: string;
   description: string;
   imageUrl: string;
   name: string;
+  data:any
 }
 const MarketplaceCard = (props: marketplaceCardProps) => {
-  const { toolName, description, imageUrl, name } = props;
+  const router = useRouter();
+  const { toolName, description, imageUrl, name ,data} = props;
+
+
+  const navigateHandler = () => {
+    localStorage.setItem("selectedTool", JSON.stringify(data));
+    
+     router.push('/marketplace-details');
+  
+    // const selectedTool  = TOOLSDATA[toolType]
+    // console.log("selectedTool",selectedTool)
+    // console.log("selectedTool",selectedTool)
+    // router.push('/marketplace-tools');
+  }
+
   return (
     <div
+    onClick={navigateHandler}
       // key={key}
-      className={`recommended-card  text-white font-michroma`}
+      className={`recommended-card  text-white font-michroma hover:cursor-pointer`}
     >
       {/* background */}
       <div className="w-full h-full absolute left-0 top-0 -z-10">

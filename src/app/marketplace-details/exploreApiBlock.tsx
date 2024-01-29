@@ -9,70 +9,48 @@ const ExploreApiBlock = (props: any) => {
   const { Panel } = Collapse;
   const apiList = [
     {
-      name: "Test test 1",
+      name: "Optimization",
       apis: [
         {
-          mode: "GET",
-          api: "/autocompletes",
+          mode: "POST",
+          api: "/apiaudit/audit/create?data=Optimization",
         },
+       
+      ],
+    },
+    {
+      name: "Audit",
+      apis: [
         {
           mode: "POST",
-          api: "/autocompletes",
-        },
-        {
-          mode: "POST",
-          api: "/autocompletes",
+          api: "/apiaudit/audit/create?data=Audit",
         },
       ],
     },
     {
-      name: "Test test 123",
+      name: "Vulnerability",
       apis: [
         {
-          mode: "GET",
-          api: "/autocompletes",
-        },
-        {
           mode: "POST",
-          api: "/autocompletes",
-        },
-        {
-          mode: "POST",
-          api: "/autocompletes",
+          api: "/apiaudit/audit/create?data=Vulnerability",
         },
       ],
     },
     {
-      name: "Test test 1",
+      name: "Codefix",
       apis: [
         {
-          mode: "GET",
-          api: "/autocompletes",
-        },
-        {
           mode: "POST",
-          api: "/autocompletes",
-        },
-        {
-          mode: "POST",
-          api: "/autocompletes",
+          api: "/apiaudit/audit/create?data=Codefix",
         },
       ],
     },
     {
-      name: "Test test 1",
+      name: "Documentation",
       apis: [
         {
-          mode: "GET",
-          api: "/autocompletes",
-        },
-        {
           mode: "POST",
-          api: "/autocompletes",
-        },
-        {
-          mode: "POST",
-          api: "/autocompletes",
+          api: "/apiaudit/audit/create?data=Documentation",
         },
       ],
     },
