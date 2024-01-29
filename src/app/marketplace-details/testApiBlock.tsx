@@ -1,56 +1,59 @@
 "use client";
 
-import { Button } from "antd";
+import { Button, InputNumber, Slider } from "antd";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { Collapse } from "antd";
 import SelectFiled from "../components/common/selectField";
 import { useForm } from "react-hook-form";
+import InputField from "../components/common/inputField";
 
 const TestApiBlock = () => {
   const { Panel } = Collapse;
+  const [temperatureValue, setTemperatureValue] = useState(1);
 
   const { register, control, formState } = useForm({});
   const data = [
     {
       title: "Header Parameters",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan volutpat lacinia. Donec a nisl imperdiet, pharetra ipsum vitae, euismod enim.",
+      description: "Optimize the code",
       apiList: [
         {
-          name: "Armur api",
-          desc: "Lorem ipsum",
-        },
-        {
-          name: "Armur api",
-          desc: "Lorem ipsum",
+          name: "Armur API-KEY",
+          desc: "This is your Armur API key",
         },
       ],
     },
     {
       title: "Required Parameters",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan volutpat lacinia. Donec a nisl imperdiet, pharetra ipsum vitae, euismod enim.",
-      apiList: [
-        {
-          name: "Lorem ipsum",
-          desc: "Lorem ipsum",
-        },
-      ],
+      description: "Optimize the code",
+      // apiList: [
+      //   {
+      //     name: "Lorem ipsum",
+      //     desc: "Lorem ipsum",
+      //   },
+      // ],
     },
-    {
-      title: "Optional Parameters",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan volutpat lacinia. Donec a nisl imperdiet, pharetra ipsum vitae, euismod enim.",
-      apiList: [
-        {
-          name: "Lorem ipsum",
-          desc: "Lorem ipsum",
-        },
-      ],
-    },
+    // {
+    //   title: "Optional Parameters",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan volutpat lacinia. Donec a nisl imperdiet, pharetra ipsum vitae, euismod enim.",
+    //   apiList: [
+    //     {
+    //       name: "Lorem ipsum",
+    //       desc: "Lorem ipsum",
+    //     },
+    //   ],
+    // },
   ];
+
+  const onChangeTemperature = (newValue: any) => {
+    if (isNaN(newValue)) {
+      return;
+    }
+    setTemperatureValue(newValue);
+  };
 
   const getHeader = (headerText: string) => (
     <div className={` w-full text-white font-michroma`}>
@@ -113,32 +116,99 @@ const TestApiBlock = () => {
                           {apiData?.desc}
                         </span>
                       </div>
-                      <div className="w-1/2 flex flex-col gap-2">
-                        <SelectFiled
-                          {...{
-                            register,
-                            control,
-                            formState,
-                            name: `${apiData?.name}.${key}`,
-                            placeholder: "test",
-                            defaultValue: "Test test 1",
-                            options: [
-                              { label: "Test test 1", value: "Test test 1" },
-                              { label: "Test test 2", value: "Test test 2" },
-                              { label: "Test test 3", value: "Test test 3" },
-                              {
-                                label: "+ Add new app",
-                                value: "+ Add new app",
-                              },
-                            ],
-                          }}
-                        />
-                        <h5 className="text-[#307FF4] text-xs tracking-wide font-orbitron">
-                          Required
-                        </h5>
-                      </div>
+                      {apiData?.name && (
+                        <div className="w-1/2 flex flex-col gap-2">
+                          <SelectFiled
+                            {...{
+                              register,
+                              control,
+                              formState,
+                              name: `${apiData?.name}.${key}`,
+                              placeholder: "test",
+                              defaultValue: "Test test 1",
+                              options: [
+                                { label: "Test test 1", value: "Test test 1" },
+                                { label: "Test test 2", value: "Test test 2" },
+                                { label: "Test test 3", value: "Test test 3" },
+                                {
+                                  label: "+ Add new app",
+                                  value: "+ Add new app",
+                                },
+                              ],
+                            }}
+                          />
+                          <h5 className="text-[#307FF4] text-xs tracking-wide font-orbitron">
+                            Required
+                          </h5>
+                        </div>
+                      )}
                     </div>
                   ))}
+                  {index === 1 && (
+                    <div className="flex flex-col gap-6 mt-2">
+                      <div className="flex justify-between items-center ">
+                        <div className="flex flex-col gap-1">
+                          <h5 className="font-inter text-sm font-medium tracking-wide">
+                            Token
+                          </h5>
+                          <h6 className="font-inter text-sm font-medium tracking-wide text-[#FFFFFFB2]">
+                            Number of tokens used to test
+                          </h6>
+                        </div>
+                        <div className="w-1/2">
+                          <InputField
+                            {...{
+                              register,
+                              control,
+                              formState,
+                              id: "token",
+                              name: "token",
+                              type: "number",
+                              containerExtraClass: "tokenInput",
+                              placeholder: "200",
+                            }}
+                          />
+                        </div>
+                      </div>
+                      <div className="flex justify-between items-center w-full">
+                        <div className="flex flex-col gap-1 w-5/12">
+                          <h5 className="font-inter text-sm font-medium tracking-wide">
+                            Temperature
+                          </h5>
+                          <h6 className="font-inter text-sm font-medium tracking-wide text-[#FFFFFFB2]">
+                            Select a low temperature value for more
+                            deterministic results
+                          </h6>
+                        </div>
+                        <div className="w-2/12">
+                          <Slider
+                            min={0}
+                            max={1}
+                            onChange={onChangeTemperature}
+                            value={
+                              typeof temperatureValue === "number"
+                                ? temperatureValue
+                                : 0
+                            }
+                            step={0.1}
+                          />
+                        </div>
+                        <div className="w-3/12">
+                          <InputNumber
+                            className="border-0 !w-full !m-0 !text-[#ffffff] tokenInput"
+                            min={0}
+                            max={1}
+                            style={{
+                              margin: "0 16px",
+                            }}
+                            step={0.1}
+                            value={temperatureValue}
+                            onChange={onChangeTemperature}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </Panel>

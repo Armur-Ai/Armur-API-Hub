@@ -68,7 +68,7 @@ const InputField = (props: InputProps) => {
         control={control}
         render={({ field }) => (
           <div className="relative">
-            <div className=" absolute w-full h-full top-0 left-0">
+            <div className=" absolute w-full h-full top-0 left-0 bg-image">
               <Image src={"/bgs/input_bg.svg"} alt="bg" fill />
             </div>
             <Input

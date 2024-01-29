@@ -81,3 +81,20 @@
             radial-gradient(12.64% 57.38% at 0% -10.09%, #ffffff 0%, rgba(255, 255, 255, 0.19) 100%);
     }
 }
+.tokenInput {
+    .bg-image {
+        display: none;
+    }
+    background: #ffffff1f !important;
+    @apply rounded;
+    .ant-input,
+    .ant-input-number-input {
+        @apply h-[2.5rem] py-1 px-5 text-white;
+    }
+}
+.ant-slider-rail {
+    background-color: #ffffff1f !important;
+}
+.ant-slider-track {
+    background-color: #307ff4 !important;
+}
