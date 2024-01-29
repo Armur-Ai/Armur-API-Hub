@@ -16,8 +16,13 @@ const ExtensionCard = (props: extensionCardProps) => {
   const { iconUrl, heading, description, url, width, height } = props;
 
   const handleOpenLink = () => {
-     message.success(`Github App will be coming soon`);
-    // window.open(url, '_blank');
+    if(heading == "Github App"){
+      message.success(`Github App will be coming soon`);
+    }else{
+       window.open(url, '_blank');
+    }
+   
+   
   };
 
   return (
