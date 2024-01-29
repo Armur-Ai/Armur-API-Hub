@@ -11,7 +11,7 @@ import AdvanceApiCodeEditor from "../components/codeEditor/advanceApiCodeEditor"
 import isEmpty from "../../isEmpty";
 
 const MarketplaceDetails = () => {
-  const [toolData, setToolData] = useState<any[]>([]);
+  const [toolData, setToolData] = useState<any>({});
 
   useEffect(() => {
     try {
@@ -60,12 +60,12 @@ const MarketplaceDetails = () => {
           </div>
           <div>
             <h2 className="text-[2.5rem] font-semibold leading-[3.1rem]">
-              {toolData.name}
+              {toolData?.name}
             </h2>
             <p
               className={`font-michroma text-base text-[rgba(255,255,255,0.6)]`}
             >
-              {toolData.description}
+              {toolData?.description}
             </p>
             <p
               className={`font-michroma text-base text-[rgba(255,255,255,0.6)]`}
@@ -109,8 +109,8 @@ const MarketplaceDetails = () => {
             {...{
               iconUrl: "/icons/vs-code.svg",
               heading: "VScode Extension",
-              description: toolData.vsExtensionInfo,
-              url: toolData.vsExtensionUrl,
+              description: toolData?.vsExtensionInfo,
+              url: toolData?.vsExtensionUrl,
               width: 59,
               height: 55,
             }}
@@ -119,8 +119,8 @@ const MarketplaceDetails = () => {
             {...{
               iconUrl: "/icons/github.png",
               heading: "Github App",
-              description: toolData.packageInfo,
-              url: toolData.vsExtensionUrl,
+              description: toolData?.packageInfo,
+              url: toolData?.vsExtensionUrl,
               width: 67,
               height: 26,
             }}
@@ -139,7 +139,8 @@ const MarketplaceDetails = () => {
         <div className="flex flex-col gap-2">
           <h3 className="text-2xl font-bold">Advanced API Usage</h3>
           <p className="text-[#FFFFFFB2] font-michroma text-base tracking-wider">
-          You can also build your own tooling by using this API. Below are the docs for the API -
+            You can also build your own tooling by using this API. Below are the
+            docs for the API -
           </p>
         </div>
       </div>
