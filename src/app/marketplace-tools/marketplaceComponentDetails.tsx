@@ -18,6 +18,15 @@ const MarketplaceComponentDetails = () => {
   const [selectedDefaultOption, selectedToolType] = useState<any>({});
  
 
+
+  useEffect(() => {
+    if(isEmpty(selectedFilter)){
+      selectedToolType( { label: "None", value: "None",toolType: "None" },)
+    }else{
+      selectedToolType( selectedFilter[0])
+    }
+
+  },[selectedFilter])
   // const value = useSelector((state: RootState) => state.demo.value);
 
   // console.log("value",value)
@@ -79,7 +88,9 @@ const MarketplaceComponentDetails = () => {
 
   const handleRemoveAll = () => {
     setSelectedFilter([]);
-    selectedToolType([])
+
+  
+    selectedToolType( { label: "None", value: "None",toolType: "None" },)
   };
 
   const handleRemove = () => {
@@ -173,7 +184,7 @@ const MarketplaceComponentDetails = () => {
                 toolName: data?.toolName,
                 description: data?.description,
                 imageUrl: data?.imageUrl,
-                name: data?.toolName,
+                name: data?.name,
                 data:data
               }}
             />

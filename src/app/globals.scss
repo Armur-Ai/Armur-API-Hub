@@ -164,6 +164,15 @@ body {
   }
 }
 
+.test-btn {
+  background: linear-gradient(
+    106.66deg,
+    rgba(255, 255, 255, 0.2) 38.49%,
+    rgba(255, 255, 255, 0) 182.75%
+  ) !important;
+  padding: 0.25rem 0.6rem !important;
+}
+
 // /* For webkit-based browsers */
 // /* Customize the scrollbar */
 // ::-webkit-scrollbar {

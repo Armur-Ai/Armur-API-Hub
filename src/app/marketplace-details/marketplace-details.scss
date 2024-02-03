@@ -100,7 +100,7 @@
     106.66deg,
     rgba(255, 255, 255, 0.2) 38.49%,
     rgba(255, 255, 255, 0) 182.75%
-  );
+  ) !important;
   padding: 0.25rem 0.6rem !important;
 
   @apply hover:text-white #{!important};
@@ -166,4 +166,16 @@
 .ant-message {
   top: 50% !important; /* Adjust the top position as needed */
   right: 50% !important; /* Adjust the right position as needed */
+  z-index: 999999999999999999999999 !important;
+}
+
+.test-btn {
+  background: linear-gradient(
+    106.66deg,
+    rgba(255, 255, 255, 0.2) 38.49%,
+    rgba(255, 255, 255, 0) 182.75%
+  ) !important;
+  padding: 0.25rem 0.6rem !important;
+
+  @apply hover:text-white #{!important};
 }

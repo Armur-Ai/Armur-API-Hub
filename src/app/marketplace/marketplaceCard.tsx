@@ -1,34 +1,45 @@
 import { CheckOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import React from "react";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
+import { Button, message } from "antd";
 
+message.config({
+  top: 150, // Set the desired top position
+  duration: 2, // Set the duration for messages
+});
 interface marketplaceCardProps {
   toolName: string;
   description: string;
   imageUrl: string;
   name: string;
-  data:any
+  data: any;
 }
 const MarketplaceCard = (props: marketplaceCardProps) => {
   const router = useRouter();
-  const { toolName, description, imageUrl, name ,data} = props;
-
+  const { toolName, description, imageUrl, name, data } = props;
 
   const navigateHandler = () => {
-    localStorage.setItem("selectedTool", JSON.stringify(data));
-    
-     router.push('/marketplace-details');
-  
+    if (data.disabled === true) {
+      message.success(`${data.name} will be comming soon`);
+    } else {
+      localStorage.setItem("selectedTool", JSON.stringify(data));
+
+      router.push("/marketplace-details");
+    }
+
+    // console.log("data",data)
+    // message.success(`Github App will be coming soon`);
+
     // const selectedTool  = TOOLSDATA[toolType]
     // console.log("selectedTool",selectedTool)
     // console.log("selectedTool",selectedTool)
     // router.push('/marketplace-tools');
-  }
+  };
 
   return (
     <div
-    onClick={navigateHandler}
+      onClick={navigateHandler}
       // key={key}
       className={`recommended-card  text-white font-michroma hover:cursor-pointer`}
     >
@@ -55,9 +66,24 @@ const MarketplaceCard = (props: marketplaceCardProps) => {
       </div>
 
       <div className="recommended-card-content mt-8 flex flex-col gap-3">
-        <h4 className={`text-sm`}>{toolName}</h4>
-        <p className="text-sm text-[rgba(255,255,255,0.7)]">{description}</p>
+        <h4 className={`text-sm`}>{name}</h4>
+        <p className="text-xs text-[rgba(255,255,255,0.7)]">{description}</p>
       </div>
+      <Button
+        // onClick={navigateHandler}
+        className="flex items-center text-white test-btn border-0 text-base tracking-wider font-michroma absolute bottom-[20px]"
+      >
+        <div className=" w-4 h-7 relative mr-1">
+          <div className="w-full h-full absolute left-0 top-0">
+            <Image
+              src="/marketplace-details/test.svg"
+              alt="marketplace test"
+              fill
+            />
+          </div>
+        </div>
+        Try now
+      </Button>
       <div className="w-16 h-16 absolute -right-2 -bottom-1">
         <Image src={imageUrl} alt={name} fill />
       </div>

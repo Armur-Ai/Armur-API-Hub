@@ -4,6 +4,11 @@ import React from "react";
 import "./marketplace-details.scss";
 import Link from "next/link";
 
+message.config({
+  top: 150, // Set the desired top position
+  duration: 2, // Set the duration for messages
+});
+
 interface extensionCardProps {
   iconUrl: string;
   heading: string;
@@ -12,6 +17,7 @@ interface extensionCardProps {
   height?: number;
   width?: number;
 }
+
 const ExtensionCard = (props: extensionCardProps) => {
   const { iconUrl, heading, description, url, width, height } = props;
 
