@@ -12,8 +12,12 @@ const MarketplaceRecommendedToolsSlider = () => {
 
   useEffect(() => {
     const TOOLSDATA: any = TOOLS_DATA;
-      
-    setRecommandedTools(TOOLSDATA["codeScan"])
+
+    const codeScan: any= TOOLSDATA["codeScan"];
+    const web3:any =  TOOLSDATA["web3"]; // Replace with your actual function or data source
+  
+    setRecommandedTools(codeScan.concat(web3))
+    // setRecommandedTools(TOOLSDATA["codeScan"])
   },[])
 
 
