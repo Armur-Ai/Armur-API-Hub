@@ -137,6 +137,7 @@ const Team = () => {
               />
             </div>
             <div className="flex flex-col gap-[3.1rem] lg:pt-40">
+              {/* Team Card */}
               <TeamCard
                 {...{
                   title: `“THE BEST SHIELD FOR YOUR SMART CONTRACTS”`,
