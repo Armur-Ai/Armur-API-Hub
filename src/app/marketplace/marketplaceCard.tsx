@@ -21,7 +21,7 @@ const MarketplaceCard = (props: marketplaceCardProps) => {
 
   const navigateHandler = () => {
     if (data.disabled === true) {
-      message.success(`${data.name} will be comming soon`);
+      // message.success(${data.name} will be comming soon);
     } else {
       localStorage.setItem("selectedTool", JSON.stringify(data));
 
@@ -29,7 +29,7 @@ const MarketplaceCard = (props: marketplaceCardProps) => {
     }
 
     // console.log("data",data)
-    // message.success(`Github App will be coming soon`);
+    // message.success(Github App will be coming soon);
 
     // const selectedTool  = TOOLSDATA[toolType]
     // console.log("selectedTool",selectedTool)
@@ -41,7 +41,9 @@ const MarketplaceCard = (props: marketplaceCardProps) => {
     <div
       onClick={navigateHandler}
       // key={key}
-      className={`recommended-card  text-white font-michroma hover:cursor-pointer`}
+      className={
+        "recommended-card  text-white font-michroma hover:cursor-pointer"
+      }
     >
       {/* background */}
       <div className="w-full h-full absolute left-0 top-0 -z-10">
@@ -66,7 +68,7 @@ const MarketplaceCard = (props: marketplaceCardProps) => {
       </div>
 
       <div className="recommended-card-content mt-8 flex flex-col gap-3">
-        <h4 className={`text-sm`}>{name}</h4>
+        <h4 className={"text-sm"}>{name}</h4>
         <p className="text-xs text-[rgba(255,255,255,0.7)]">{description}</p>
       </div>
       <Button
@@ -82,7 +84,7 @@ const MarketplaceCard = (props: marketplaceCardProps) => {
             />
           </div>
         </div>
-        Try now
+        {data.disabled === true ? "Coming soon" : "Try now"}
       </Button>
       <div className="w-16 h-16 absolute -right-2 -bottom-1">
         <Image src={imageUrl} alt={name} fill />
