@@ -30,8 +30,13 @@ const roboto = Michroma({
   variable: "--font-roboto",
 });
 export const metadata: Metadata = {
-  title: "Armur",
-  description: "Explore all tools on our API Hub",
+  title:
+    "Armur API Hub - Code Scanning Tools, Smart Contract Auditing Tools and more",
+  description:
+    "Discover Code Security scanning APIs, Smart Contract Auditing APIs, Pentesting APIs and more at our API Hub.",
+  icons: {
+    icon: "/icon.ico",
+  },
 };
 
 export default function RootLayout({

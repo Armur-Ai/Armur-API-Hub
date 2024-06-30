@@ -2,25 +2,19 @@
     "DISCOVERTOOLS": [
         {
             "imageUrl": "/marketplace/web-icon.svg",
-            "name": "Smart Contract Auditing",
+            "name": "Web3 Auditing tools",
             "link": "/marketplace/web3-auditing-tool",
             "toolType": "web3"
         },
         {
             "imageUrl": "/marketplace/code-scan.svg",
-            "name": "Code Vulnerability Scanning",
+            "name": "Code scan",
             "link": "/marketplace/code-scan",
             "toolType": "codeScan"
         },
         {
-            "imageUrl": "/marketplace/plugin.svg",
-            "name": "IAC Vulnerabilities Scanner",
-            "link": "/marketplace/plugin",
-            "toolType": "plugins"
-        },
-        {
             "imageUrl": "/marketplace/sec-ops.svg",
-            "name": "DevSecOps Tooling",
+            "name": "SecOps",
             "link": "/marketplace/sec-ops",
             "toolType": "secOps"
         },
@@ -32,27 +26,33 @@
         },
         {
             "imageUrl": "/marketplace/pentesting.svg",
-            "name": "AI Powered Pentesting",
+            "name": "Pentesting",
             "link": "/marketplace/pentesting",
             "toolType": "penTesting"
         },
         {
             "imageUrl": "/marketplace/recan.svg",
-            "name": "AI Powered Recon",
+            "name": "Recon",
             "link": "/marketplace/recon",
             "toolType": "recon"
         },
         {
             "imageUrl": "/marketplace/web3-sec.svg",
-            "name": "Web3 Security Tooling",
+            "name": "Web3 sec",
             "link": "/marketplace/web3-sec",
             "toolType": "recon"
         },
         {
             "imageUrl": "/marketplace/db-security.svg",
-            "name": "DataBase Security",
+            "name": "DB Security",
             "link": "/marketplace/db-security",
             "toolType": "dbSecurity"
+        },
+        {
+            "imageUrl": "/marketplace/plugin.svg",
+            "name": "Plugin",
+            "link": "/marketplace/plugin",
+            "toolType": "plugins"
         }
     ],
     "RECOMMENDED_TOOLS": [
