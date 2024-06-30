@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 import { Input } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import TOOLS from "./data.json";
@@ -11,22 +11,19 @@ import MarketplacePopularToolsSlider from "./marketplacePopularToolsSlider";
 import MarketplaceRecommendedToolsSlider from "./marketplaceRecommendedToolsSlider";
 import "./marketplace.scss";
 
-
 const MarketplaceComponent = () => {
   const router = useRouter();
 
-
-
-  const navigateHandler = (toolType: string,TOOLSDATA:any) => {
+  const navigateHandler = (toolType: string, TOOLSDATA: any) => {
     localStorage.setItem("selectedToolType", JSON.stringify(toolType));
-    
-     router.push('/marketplace-tools');
-  
+
+    router.push("/marketplace-tools");
+
     // const selectedTool  = TOOLSDATA[toolType]
     // console.log("selectedTool",selectedTool)
     // console.log("selectedTool",selectedTool)
     // router.push('/marketplace-tools');
-  }
+  };
 
   //--------------------------------------------------------------------
   //                       TITLE_WITH_PARA
@@ -89,22 +86,28 @@ const MarketplaceComponent = () => {
         {Object?.values(TOOLS)[0]?.map((data: any, key: number) => (
           <div key={key} className="discover-card ">
             {/* <Link href={"/marketplace-tools"}> */}
-              <div onClick={() =>navigateHandler(data.toolType,TOOLSDATA)} className="hover:cursor-pointer w-full h-[8.3rem] relative">
-                <div className="w-full h-full absolute left-0 top-0">
-                  <Image
-                    src={data?.imageUrl}
-                    alt={data.name}
-                    fill
-                    className=" object-cover object-left-tops rounded-tl-[1.25rem] rounded-tr-[1.25rem]"
-                  />
-                </div>
+            <div
+              onClick={() => navigateHandler(data.toolType, TOOLSDATA)}
+              className="hover:cursor-pointer w-full h-[8.3rem] relative"
+            >
+              <div className="w-full h-full absolute left-0 top-0">
+                <Image
+                  src={data?.imageUrl}
+                  alt={data.name}
+                  fill
+                  className=" object-cover object-left-tops rounded-tl-[1.25rem] rounded-tr-[1.25rem]"
+                />
               </div>
-              <div className="discover-card-content">
-                <h4 className={`font-michroma text-white xl:text-lg text-base`}>
-                  {" "}
-                  {data.name}
-                </h4>
-              </div>
+            </div>
+            <div
+              className="discover-card-content"
+              onClick={() => navigateHandler(data.toolType, TOOLSDATA)}
+            >
+              <h4 className={`font-michroma text-white xl:text-lg text-base`}>
+                {" "}
+                {data.name}
+              </h4>
+            </div>
             {/* </Link> */}
           </div>
         ))}
