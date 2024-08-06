@@ -46,7 +46,7 @@
             "imageUrl": "/marketplace/web3-sec.svg",
             "name": "Web3 Security Tooling",
             "link": "/marketplace/web3-sec",
-            "toolType": "recon"
+            "toolType": "web3sec"
         },
         {
             "imageUrl": "/marketplace/db-security.svg",
