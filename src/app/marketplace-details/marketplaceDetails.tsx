@@ -9,30 +9,42 @@ import CodeTabBlock from "./codeTabBlock";
 import ExtensionCard from "./extensionCard";
 import AdvanceApiCodeEditor from "../components/codeEditor/advanceApiCodeEditor";
 import isEmpty from "../../isEmpty";
+import Cookies from "universal-cookie";
 
 const MarketplaceDetails = () => {
   const [toolData, setToolData] = useState<any>({});
-  const [selectedApi,setSelectedApi] =  useState<any>( {
+  const cookies = new Cookies();
+  const [selectedApi, setSelectedApi] = useState<any>({
     name: "Optimization",
     apis: [
       {
         mode: "POST",
         api: "/apiaudit/audit/create?data=Optimization",
       },
-     
     ],
-  },);
+  });
 
   useEffect(() => {
     try {
       const storedTool = localStorage.getItem("selectedTool");
-      if (storedTool) {
-        let selectedTool = JSON.parse(storedTool);
-        setToolData(selectedTool);
+      if (cookies.get("apiHubData")) {
+        setToolData(cookies.get("apiHubData"));
+      } else {
+        if (storedTool) {
+          let selectedTool = JSON.parse(storedTool);
+
+          setToolData(selectedTool);
+        }
       }
     } catch (error) {
       console.error("Error parsing selectedTool:", error);
     }
+
+    return () => {
+      setTimeout(() => {
+        cookies.remove("apiHubData");
+      }, 3000);
+    };
   }, []);
 
   React.useEffect(() => {
@@ -102,10 +114,13 @@ const MarketplaceDetails = () => {
       {/* Detailed Block */}
       <div className="flex pt-3 items-stretch">
         <div className="w-3/12 custom-border custom-border--explore-api">
-          <ExploreApiBlock setSelectedApi={setSelectedApi} selectedApi={selectedApi}/>
+          <ExploreApiBlock
+            setSelectedApi={setSelectedApi}
+            selectedApi={selectedApi}
+          />
         </div>
         <div className="w-5/12 custom-border custom-border--testApi-block">
-          <TestApiBlock selectedApi={selectedApi}/>
+          <TestApiBlock selectedApi={selectedApi} />
         </div>
         <div className="w-4/12 h-full pl-5">
           <CodeTabBlock />
