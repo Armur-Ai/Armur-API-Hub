@@ -54,6 +54,11 @@ const MarketplaceComponent = () => {
   };
   return (
     <div className="xl:px-28 md:px-16 px-0 py-5">
+      <a href="https://armur.ai/">
+        <button className="mb-10 border-[1px] border-white text-sm rounded-full px-6 py-2">
+          Back to site
+        </button>
+      </a>
       <div className="lg:flex hidden items-center justify-between">
         <div className=" items-center  flex">
           <h2 className="marketplace-title">AI Security</h2>
